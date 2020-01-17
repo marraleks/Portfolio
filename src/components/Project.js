@@ -22,7 +22,8 @@ const Project = (props) => {
 
 const styles = {
     backgroundImage: "url("+ props.data.defaultImage +")",
-    backgroundSize: "cover",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
 }
 
     return(
