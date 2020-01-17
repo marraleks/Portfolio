@@ -3,7 +3,6 @@ import { Router } from "@reach/router"
 import './App.css';
 import firebase from './components/firebase'
 import Projects from './components/Projects'
-import Contact from './components/Contact'
 import Header from './components/Header'
 import About from './components/About'
 import Login from './components/Login'
@@ -30,7 +29,6 @@ const App = () => {
       <Header signedIn={signedIn}/>
       <Router>
         <Projects signedIn={signedIn} path='/'/>
-        <Contact path='/contact'/>
         <About path='/about'/>
         <Login signedIn={signedIn} setSignedIn={setSignedIn} path='/login'/>
         <Edit path='/edit/:id'/>

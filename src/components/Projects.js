@@ -29,12 +29,18 @@ const Projects = (props) => {
 
     return(
         <main>
+            <div className='intro'>
+                <h1>Marius Aleksander Sletten<span>.</span></h1>
+                <h1>I am a UX designer who loves<br></br>Front-end development<span>.</span></h1>
+                <h5>scroll</h5>
+            </div>
             {
                 props.signedIn &&
                 <div className='add'>
                     <IoIosAddCircle className='edit-icons' onClick={addProject}/>
                 </div>
             }
+            <h2>My work<span>.</span></h2>
             <div className='projectsContainer'>
                 {
                     projects.map(

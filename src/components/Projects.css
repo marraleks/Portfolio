@@ -1,3 +1,19 @@
+.intro {
+    width: 100vw;
+    height: 90vh;
+    background-color: #2B2A29;
+    position: relative;
+}
+
+.intro h5 {
+    text-align: center;
+    align-content: end;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5vh;
+    font-family: 'Gilroy';
+}
 .projectsContainer{
     width: 100%;
     display: grid;
@@ -6,16 +22,33 @@
 
 .add{
     position: fixed;
-    width: 100vw;
-    left: 0;
-    top: 10vh;
-    height: 5vh;
-    background-color: rgb(104, 104, 104);
+    bottom: 10vh;
+    right: 10vh;
     display: grid;
     place-items: center;
     z-index: 1;
+    transform: scale(2.5);
+    color:white;
 }
 
 .project img {
     width: 100%;
+}
+
+h1:nth-child(odd){
+    color: white;
+}
+h1:nth-child(even){
+    color: #D1363A;
+}
+
+span:nth-child(odd){
+    color: #D1363A;
+}
+span:nth-child(even){
+    color: white;
+}
+
+h2{
+    color: #2B2A29;
 }

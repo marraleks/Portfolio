@@ -6,16 +6,19 @@ import './Header.css'
 const Header = (props) => {
     return(
         <header>
-            <Link to ='/'>home</Link>
-            <Link to ='/contact'>kontakt</Link>
+            <div>
+                <Link to ='/'>mas<span>.</span></Link>
+            </div>
+            <div>
             <Link to ='/about'>om</Link>
-            <Link to ='/login'>
-                {
-                    props.signedIn
-                    ? 'profile'
-                    : 'login'
-                }
-            </Link>
+                <Link to ='/login'>
+                    {
+                        props.signedIn
+                        ? 'profile'
+                        : 'login'
+                    }
+                </Link>
+            </div>
         </header>
     )
 }
