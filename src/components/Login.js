@@ -27,7 +27,7 @@ const Login = (props) => {
             }
             {
                 props.signedIn && 
-                <>
+                <div>
                 <h1>You are signed in to firebase</h1>
                 <p>Welcome {firebase.auth().currentUser.displayName}</p>
                 {
@@ -35,7 +35,7 @@ const Login = (props) => {
                     <img alt='profile img' src={firebase.auth().currentUser.photoURL}/>
                 }
                 <button onClick={logout}>sign out</button>
-                </>
+                </div>
 
             }
         </main>

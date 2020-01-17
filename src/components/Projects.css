@@ -3,6 +3,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.add .edit-icons{
-    margin-bottom: 2rem;
+
+.add{
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 10vh;
+    height: 5vh;
+    background-color: rgb(104, 104, 104);
+    display: grid;
+    place-items: center;
+    z-index: 1;
+}
+
+.project img {
+    width: 100%;
 }

@@ -2,7 +2,8 @@ import React, {useState, useEffect} from 'react'
 import firebase from './firebase'
 import Project from './Project'
 import './Projects.css'
-import { IoIosAddCircle } from "react-icons/io";
+import { IoIosAddCircle } from "react-icons/io"
+import { navigate } from '@reach/router'
 
 const Projects = (props) => {
     const [projects, setProjects] = useState([])
@@ -14,7 +15,7 @@ const Projects = (props) => {
                 timestap: firebase.firestore.FieldValue.serverTimestamp()
             }
         )
-        .then( doc  => console.log('added docoument with id ', doc.id) )
+        .then( doc  => navigate('/edit/' + doc.id) )
     }
     useEffect(() => {
         firebase
@@ -37,7 +38,7 @@ const Projects = (props) => {
             <div className='projectsContainer'>
                 {
                     projects.map(
-                    project => <Project key={project.id} data={project.data()} />
+                    project => <Project key={project.id} data={project.data()} id={project.id} signedIn={props.signedIn} />
                     )
                 }
             </div>

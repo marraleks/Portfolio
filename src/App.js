@@ -7,6 +7,7 @@ import Contact from './components/Contact'
 import Header from './components/Header'
 import About from './components/About'
 import Login from './components/Login'
+import Edit from './components/Edit'
 
 const App = () => {
 
@@ -32,6 +33,7 @@ const App = () => {
         <Contact path='/contact'/>
         <About path='/about'/>
         <Login signedIn={signedIn} setSignedIn={setSignedIn} path='/login'/>
+        <Edit path='/edit/:id'/>
       </Router>
     </div>
   )
