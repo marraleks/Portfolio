@@ -1,0 +1,9 @@
+main.login{
+    justify-content: left;
+}
+
+.login img{
+    width: 100px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}

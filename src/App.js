@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
+import { Router } from "@reach/router"
 import './App.css';
+import firebase from './components/firebase'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Header from './components/Header'
+import About from './components/About'
+import Login from './components/Login'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+
+  const [signedIn, setSignedIn] = useState(false)
+
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged(
+      user => {
+        if(user){
+          setSignedIn(true)
+        }else{
+          setSignedIn(false)
+        }
+      }
+    )
+  })
+
+  return(
+    <div>
+      <Header signedIn={signedIn}/>
+      <Router>
+        <Projects signedIn={signedIn} path='/'/>
+        <Contact path='/contact'/>
+        <About path='/about'/>
+        <Login signedIn={signedIn} setSignedIn={setSignedIn} path='/login'/>
+      </Router>
     </div>
-  );
+  )
 }
+
 
 export default App;
