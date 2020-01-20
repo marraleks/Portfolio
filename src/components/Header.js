@@ -15,8 +15,8 @@ const Header = (props) => {
             </div>
             <div>
                 <p>Find me on:</p>
-                    <a href='http://www.dr.dk'><IoLogoLinkedin/></a>
-                    <a href='http://www.dr.dk'><IoLogoGithub/></a>
+                    <a href='https://www.linkedin.com/in/marius-aleksander-sletten-92aa3716a/' target="_blank" rel="noopener noreferrer"><IoLogoLinkedin/></a>
+                    <a href='https://github.com/marraleks' target="_blank" rel="noopener noreferrer"><IoLogoGithub/></a>
             </div>
         </header>
     )

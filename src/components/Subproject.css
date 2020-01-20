@@ -1,0 +1,25 @@
+.subContainer{
+    height: 90vh;
+    width: 100vw;
+    background-color: #2B2A29;
+    display: grid;
+    padding-bottom: 10rem;
+    text-align: center;
+    position: relative;
+    align-content: center;
+}
+
+.subContainer h1{
+    font-size: 5rem;
+    color: white;
+}
+
+.subContainer h5 {
+    text-align: center;
+    align-content: end;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1vh;
+    font-family: 'Gilroy';
+}

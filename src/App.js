@@ -6,6 +6,9 @@ import Projects from './components/Projects'
 import Header from './components/Header'
 import Login from './components/Login'
 import Edit from './components/Edit'
+import Apputvikling from './components/Apputvikling'
+import BasicFrontEnd from './components/BasicFrontEnd'
+
 
 const App = () => {
 
@@ -30,6 +33,8 @@ const App = () => {
         <Projects signedIn={signedIn} path='/'/>
         <Login signedIn={signedIn} setSignedIn={setSignedIn} path='/login'/>
         <Edit path='/edit/:id'/>
+        <Apputvikling path='/prosjekt/JnaOYdbRJVCdG3thG7WL'/>
+        <BasicFrontEnd path='/prosjekt/DLvrUVdVtvGeeTkknwXe'/>
       </Router>
     </div>
   )

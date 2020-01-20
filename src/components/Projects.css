@@ -21,11 +21,6 @@
     bottom: 1vh;
     font-family: 'Gilroy';
 }
-/* .projectsContainer{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-} */
 
 .add{
     position: fixed;

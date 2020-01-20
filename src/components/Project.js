@@ -26,9 +26,12 @@ const styles = {
 }
 
     return(
+       
         <div className='project'>
             <div className='child' style={styles}>
-                <div className='overlay'></div>
+                <Link to={"/prosjekt/" + props.id}>
+                    <div className='overlay'></div>
+                </Link>
             </div>
             <div className="afterHover">
                 <h1>{props.data.title}</h1>
@@ -44,6 +47,7 @@ const styles = {
                 </div>
             }
         </div>
+    
     )
 }
 
