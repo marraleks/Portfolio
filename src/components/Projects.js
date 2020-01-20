@@ -4,6 +4,7 @@ import Project from './Project'
 import './Projects.css'
 import { IoIosAddCircle } from "react-icons/io"
 import { navigate } from '@reach/router'
+import ClipLoader from "react-spinners/ClipLoader"
 
 const Projects = (props) => {
     const [projects, setProjects] = useState([])
@@ -30,8 +31,8 @@ const Projects = (props) => {
     return(
         <main>
             <div className='intro'>
-                <h1>Marius Aleksander Sletten<span>.</span></h1>
-                <h1>I am a UX designer who loves<br></br>Front-end development<span>.</span></h1>
+                <h1>Marius Aleksander<br/>Sletten<span>.</span></h1>
+                <h1>I am a UX designer<br/>who loves<br/>Front-end<br/>development<span>.</span></h1>
                 <h5>scroll</h5>
             </div>
             {
@@ -40,7 +41,11 @@ const Projects = (props) => {
                     <IoIosAddCircle className='edit-icons' onClick={addProject}/>
                 </div>
             }
+                
             <h2>My work<span>.</span></h2>
+            {
+                    projects.length > 0
+                    ?
             <div className='projectsContainer'>
                 {
                     projects.map(
@@ -48,6 +53,9 @@ const Projects = (props) => {
                     )
                 }
             </div>
+            :
+            <ClipLoader/>
+            }
         </main>
     )
 }
