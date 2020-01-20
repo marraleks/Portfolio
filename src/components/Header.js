@@ -10,7 +10,6 @@ const Header = (props) => {
                 <Link to ='/'>mas<span>.</span></Link>
             </div>
             <div>
-            <Link to ='/about'>om</Link>
                 <Link to ='/login'>
                     {
                         props.signedIn

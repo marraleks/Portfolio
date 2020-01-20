@@ -4,7 +4,6 @@ import './App.css';
 import firebase from './components/firebase'
 import Projects from './components/Projects'
 import Header from './components/Header'
-import About from './components/About'
 import Login from './components/Login'
 import Edit from './components/Edit'
 
@@ -29,7 +28,6 @@ const App = () => {
       <Header signedIn={signedIn}/>
       <Router>
         <Projects signedIn={signedIn} path='/'/>
-        <About path='/about'/>
         <Login signedIn={signedIn} setSignedIn={setSignedIn} path='/login'/>
         <Edit path='/edit/:id'/>
       </Router>

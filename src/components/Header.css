@@ -5,21 +5,15 @@ header{
     background: #2B2A29;
     display: grid;
     grid-auto-flow: column;
-    justify-content: center;
     align-items: center;
-    gap: 60vw;
     z-index: 1;
     box-shadow: 0px 2px #707070;
-}
-header div {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 2rem;
 }
 
 header a{
     text-decoration: none;
     color: white;
+    margin-left: 20%;
 }
 
 span {

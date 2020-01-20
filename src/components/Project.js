@@ -4,7 +4,6 @@ import { MdDelete } from "react-icons/md"
 import { FaCode } from "react-icons/fa"
 import firebase from './firebase'
 import { Link } from '@reach/router'
-import parse from 'html-react-parser';
 
 
 
@@ -27,8 +26,11 @@ const styles = {
 }
 
     return(
-        <div className='project' style={styles}>
-            <div>
+        <div className='project'>
+            <div className='child' style={styles}>
+                <div className='overlay'></div>
+            </div>
+            <div className="afterHover">
                 <h1>{props.data.title}</h1>
                 <p>&mdash; view &mdash;</p>
             </div>

@@ -19,18 +19,21 @@ body, html{
 a{
   color: black;
 }
+a:hover{
+  color: #D1363A;
+}
 
 main{
   min-height: 100vh;
+  padding-top: 10vh;
   display: grid;
   place-items: center;
-  align-content: center;
-  padding-top: 10vh;
 }
 
 .edit-icons{
   cursor: pointer;
   transform: scale(1.5);
+  color: white;
 }
 
 button, .button{

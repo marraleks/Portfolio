@@ -32,8 +32,8 @@ const Projects = (props) => {
     return(
         <main>
             <div className='intro'>
-                <h1>Marius Aleksander<br/>Sletten<span>.</span></h1>
-                <h1>I am a UX designer<br/>who loves<br/>Front-end<br/>development<span>.</span></h1>
+                <h1>Marius Aleksander<br/>Sletten<span className="red">.</span></h1>
+                <h1>I am a UX designer<br/>who loves<br/>Front-end<br/>development<span className="white">.</span></h1>
                 <h5>scroll</h5>
             </div>
             {

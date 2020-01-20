@@ -1,10 +1,10 @@
 .project{
     min-height: 50vh;
-    padding: 2rem;
     background-color: #eee;
     position: relative;
     display: grid;
     place-items: center;
+    overflow:hidden;
 }
 
 .project h1{
@@ -27,4 +27,33 @@
     grid-auto-flow: column;
     justify-content: end;
     gap: 1rem;
+}
+
+.afterHover{
+    opacity:0;
+    transition:.4s ease;
+    position:absolute;
+}
+
+.project:hover > .afterHover{
+    opacity:100;
+}
+
+.project:hover > .child{
+    transform:scale(1.4);
+    background:rgba(0,0,0,.6);
+}
+
+.project .child{
+    width:100%;
+    height:100%;
+    transition:.4s ease;
+}
+.overlay{
+    height:100%;
+    width:100%;
+    transition:.6s ease;
+}
+.child:hover > .overlay{
+    background-color:rgba(0,0,0,0.6);
 }
