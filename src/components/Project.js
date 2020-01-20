@@ -28,17 +28,10 @@ const styles = {
 
     return(
         <div className='project' style={styles}>
-            
-            <h1>{props.data.title}</h1>
             <div>
-                {
-                props.data.description &&
-                parse(props.data.description)
-                }
+                <h1>{props.data.title}</h1>
+                <p>&mdash; view &mdash;</p>
             </div>
-                {
-               props.data.color && <p>Farge: {props.data.color}</p>
-                }
             {
                 props.signedIn &&
                 <div className="admin-icons"> 

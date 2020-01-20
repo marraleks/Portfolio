@@ -3,10 +3,20 @@
     padding: 2rem;
     background-color: #eee;
     position: relative;
+    display: grid;
+    place-items: center;
 }
 
 .project h1{
-    font-size: 1,2rem;
+    font-size: 2rem;
+    font-family: "Gilroy";
+    text-align: center;
+}
+.project p{
+    font-size: 1rem;
+    font-family: "Gilroy";
+    text-align: center;
+    color: white;
 }
 
 .admin-icons{

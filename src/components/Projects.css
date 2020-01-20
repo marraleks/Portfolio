@@ -14,11 +14,11 @@
     bottom: 5vh;
     font-family: 'Gilroy';
 }
-.projectsContainer{
+/* .projectsContainer{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
+} */
 
 .add{
     position: fixed;
@@ -51,8 +51,23 @@ span:nth-child(even){
 
 h2{
     color: #2B2A29;
+    font-size: 5rem;
+    justify-self: start;
+    margin-left: 2rem;
 }
 
 h5{
     color: white;
 }
+
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    width: 100%;
+  }
+  .my-masonry-grid_column {
+    background-clip: padding-box;
+  }
+   
+ 
