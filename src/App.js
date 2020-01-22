@@ -1,14 +1,17 @@
 import React, {useState, useEffect} from 'react';
-import { Router } from "@reach/router"
+import { Router, navigate } from "@reach/router"
 import './App.css';
 import firebase from './components/firebase'
 import Projects from './components/Projects'
 import Header from './components/Header'
 import Login from './components/Login'
 import Edit from './components/Edit'
-import Apputvikling from './components/Apputvikling'
-import BasicFrontEnd from './components/BasicFrontEnd'
+import ProjectDetail from './components/ProjectDetail'
 
+const Default = () => {
+  navigate('/projects')
+  return(<></>)
+}
 
 const App = () => {
 
@@ -30,11 +33,11 @@ const App = () => {
     <div>
       <Header signedIn={signedIn}/>
       <Router>
-        <Projects signedIn={signedIn} path='/'/>
+        <Default path='/'/>
+        <Projects signedIn={signedIn} path='/projects'/>
         <Login signedIn={signedIn} setSignedIn={setSignedIn} path='/login'/>
         <Edit path='/edit/:id'/>
-        <Apputvikling path='/prosjekt/JnaOYdbRJVCdG3thG7WL'/>
-        <BasicFrontEnd path='/prosjekt/DLvrUVdVtvGeeTkknwXe'/>
+        <ProjectDetail path='/projects/:id'/>
       </Router>
     </div>
   )

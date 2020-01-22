@@ -3,7 +3,7 @@ import './Project.css'
 import { MdDelete } from "react-icons/md"
 import { FaCode } from "react-icons/fa"
 import firebase from './firebase'
-import { Link } from '@reach/router'
+import { Link, navigate } from '@reach/router'
 
 
 
@@ -28,14 +28,12 @@ const styles = {
     return(
        
         <div className='project'>
-            <div className='child' style={styles}>
-                <Link to={"/prosjekt/" + props.id}>
-                    <div className='overlay'></div>
-                </Link>
-            </div>
-            <div className="afterHover">
+            <div className="afterHover" onClick={ () => navigate('/projects/' + props.id)}> 
                 <h1>{props.data.title}</h1>
                 <p>&mdash; view &mdash;</p>
+            </div>
+            <div className='child' style={styles}>
+                    <div className='overlay' onClick={ () => navigate('/projects/' + props.id)}></div>
             </div>
             {
                 props.signedIn &&

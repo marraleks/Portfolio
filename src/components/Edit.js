@@ -63,7 +63,8 @@ const Edit = (props) => {
             <h1>Edit project: {project.title}</h1>
             <form onSubmit={saveProject}>
                 <input input='text' onChange={updateValue} name='title' value={project.title}/>
-                <input input='text' onChange={updateValue} name='year' value={project.year}/>
+                <input input='text' onChange={updateValue} name='year' placeholder='year' value={project.year}/>
+                <input input='text' onChange={updateValue} name='byline' placeholder='short description' value={project.byline}/>
                 <textarea onChange={updateValue} name='description' value={project.description}/>
                 {
                     project.defaultImage &&

@@ -5,6 +5,7 @@
     display: grid;
     place-items: center;
     overflow:hidden;
+    cursor: pointer;
 }
 
 .project h1{
@@ -27,33 +28,36 @@
     grid-auto-flow: column;
     justify-content: end;
     gap: 1rem;
-}
-
-.afterHover{
-    opacity:0;
-    transition:.4s ease;
-    position:absolute;
+    z-index: 12;
 }
 
 .project:hover > .afterHover{
     opacity:100;
 }
 
+.afterHover{
+    opacity:0;
+    transition:.4s ease;
+    position:absolute;
+    z-index:2;
+}
+
 .project:hover > .child{
     transform:scale(1.4);
-    background:rgba(0,0,0,.6);
+    background-color:rgba(0,0,0,0.6);
+}
+
+.project:hover > .child .overlay{
+    background-color:rgba(0,0,0,0.6);
 }
 
 .project .child{
-    width:100%;
-    height:100%;
     transition:.4s ease;
-}
-.overlay{
-    height:100%;
     width:100%;
-    transition:.6s ease;
+    height:100%;
 }
-.child:hover > .overlay{
-    background-color:rgba(0,0,0,0.6);
+.child .overlay{
+    transition:.6s ease;
+    width:100%;
+    height:100%;
 }

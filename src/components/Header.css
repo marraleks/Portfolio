@@ -1,3 +1,21 @@
+.header-containter{
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    background: white;
+    display: grid;
+    place-items: center;
+    z-index: 2;
+}
+
+.burger{
+    display: none;
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    right: 10%;
+}
+
 header{
     position: fixed;
     width: 100vw;
@@ -33,6 +51,34 @@ p{
     font-family: 'Gilroy';
 }
 
-[aria-current='page'] {
+/* [aria-current='page'] {
     text-decoration: underline;
+} */
+
+@media (max-width:1000px){
+    header{
+        width: 100%;
+        transform: translateY(-110%);
+        grid-auto-flow: row;
+        align-content: center;
+        min-height: 100vh;
+        transition: .4s ease;
+        background-color: #2B2A29;
+        justify-content: center;
+        gap: 2rem;
+    }
+    header a{
+        font-size: 2rem;
+    }
+    .burger{
+        display: block;
+    }
+    header.visible{
+        transform: translateY(0);
+        background-color: #2B2A29;
+    }
+    .header-containter{
+        background-color: #2B2A29;
+    }
 }
+
