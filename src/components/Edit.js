@@ -63,12 +63,14 @@ const Edit = (props) => {
             <h1>Edit project: {project.title}</h1>
             <form onSubmit={saveProject}>
                 <input input='text' onChange={updateValue} name='title' value={project.title}/>
-                <input input='text' onChange={updateValue} name='year' placeholder='year' value={project.year}/>
-                <input input='text' onChange={updateValue} name='byline' placeholder='short description' value={project.byline}/>
-                <textarea onChange={updateValue} name='description' value={project.description}/>
+                <input input='text' onChange={updateValue} name='byline' placeholder='Very short description' value={project.byline}/>
+                <input input='text' onChange={updateValue} name='tech' placeholder='Techs used' value={project.tech}/>
+                <input input='text' onChange={updateValue} name='year' placeholder='Month and year' value={project.year}/>
+                
+                <textarea onChange={updateValue} name='description' placeholder='Description of the project' value={project.description}/>
                 {
                     project.defaultImage &&
-                    <img src={project.defaultImage} alt='default' />
+                    <img src={project.defaultImage} alt='default'/>
                 }
                 <label>
                 <div className='button'>{project.defaultImage ? 'replace' : 'upload'}</div>

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './Project.css'
 import firebase from './firebase'
 import ProjectTitle from './ProjectTitle'
-
+import './ProjectDetail.css'
 
 
 const ProjectDetail = (props) => {
@@ -17,6 +17,7 @@ const ProjectDetail = (props) => {
         )
     }, [props.id])
 
+
     return(
         <main>
             {
@@ -24,15 +25,38 @@ const ProjectDetail = (props) => {
                 ?
                 <>
                     <ProjectTitle title={project.title} className='project-detail' />
-                    {
-                        project.year &&
-                        <div>{project.year}</div>
-                    }
+                    <div className='projectContainer'>
+                        <div>
+                            <h3>Project</h3>
+                                {
+                                    project.byline &&
+                                    <div className='projectByline'>- {project.byline}</div>
+                                }
+                                {    project.tech &&
+                                    <div className='projectTech'>- {project.tech}</div>
+                                }
+                                {
+                                    project.year &&
+                                    <div className="projectYear">- {project.year}</div>
+                                }
+                        </div>
+                        <div>
+                                {
+                                    project.description &&
+                                    <div className='projectDescription'>{project.description}</div>
+                                }
+                        </div>
+                    </div>
+                                {
+                                    project.defaultImage &&
+                                    <img className='projectImage' src={project.defaultImage} alt='Projectimage'/>
+                                }
                 </>
                 :
                     <h2>Fetching Project, hold on</h2>
                 }
         </main>
+        
     
     )
 }

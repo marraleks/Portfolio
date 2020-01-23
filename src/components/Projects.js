@@ -13,7 +13,7 @@ const Projects = (props) => {
     const addProject = () => {
         firebase.firestore().collection('projects').add(
             {
-                title:'0 New project',
+                title:'Projecttitle',
                 timestap: firebase.firestore.FieldValue.serverTimestamp()
             }
         )

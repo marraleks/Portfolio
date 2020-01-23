@@ -4,6 +4,9 @@ input, textarea, label{
     display: block;
     margin-bottom: 1rem;
 }
+p{
+    color: black;
+}
 
 textarea{
     min-width: 60vw;

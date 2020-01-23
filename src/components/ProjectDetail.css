@@ -1,0 +1,30 @@
+.projectContainer{
+    width: 100vw;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding: 0 15% 0 15%;
+    margin-top: 30vh;
+    gap: 25%;
+}
+h3{
+    font-size: 2rem;
+    color: #2B2A29;
+    margin-top: 0;
+}
+
+.projectByline, .projectTech, .projectYear, .projectDescription{
+    font-family: 'Gilroy';
+    color: #747474;
+}
+.projectImage{
+    margin-top: 10vh;
+    width: 70vw;
+}
+
+@media (max-width:1000px){
+    .projectContainer{
+        grid-auto-flow: row;
+    }
+    
+}
