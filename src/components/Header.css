@@ -40,6 +40,8 @@ header div{
 header a{
     text-decoration: none;
     color: white;
+    display: grid;
+    grid-auto-flow: column;
 }
 
 span {
@@ -69,6 +71,10 @@ p{
     }
     header a{
         font-size: 2rem;
+        display: inline;
+    }
+    .none{
+        display: none;
     }
     .burger{
         display: block;
