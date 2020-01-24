@@ -60,12 +60,8 @@ const ProjectDetail = (props) => {
                                 {
                                     project.defaultImage && 
                                     <div style={image} className='projectImage'></div>
-                                 
                                 }
-                                {
-                                    
-                                }
-                                
+                                {/* <embed src="https://marraleks.github.io/skahr/"></embed>                         */}
                 </>
                 :
                     <h2>Fetching Project, hold on</h2>

@@ -18,10 +18,15 @@ h3{
     font-family: 'Gilroy';
     color: #747474;
 }
+
 .projectImage{
-    width: 70vw;
-    height: 70vh;
+   height: 70vh;
+   width: 70vw;
 }
+/* embed{
+    width: 90vw;
+    height: 100vh;
+} */
 
 @media (max-width:1000px){
     .projectContainer{
