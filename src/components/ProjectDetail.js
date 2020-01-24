@@ -37,7 +37,7 @@ const ProjectDetail = (props) => {
                     <ProjectTitle title={project.title} className='project-detail' />
                     <div className='projectContainer'>
                         <div>
-                            <h3>Project</h3>
+                            <h3>Info</h3>
                                 {
                                     project.byline &&
                                     <div className='projectByline'>- {project.byline}</div>
