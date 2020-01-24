@@ -5,7 +5,7 @@
     background: white;
     display: grid;
     place-items: center;
-    z-index: 2;
+    z-index: 3;
 }
 
 .burger{
@@ -52,8 +52,8 @@ header p{
     font-family: 'Gilroy';
 }
 
-/* [aria-current='page'] {
-    text-decoration: underline;
+/* [aria-current='page'], .active{
+    text-decoration: line-through;
 } */
 
 @media (max-width:1000px){

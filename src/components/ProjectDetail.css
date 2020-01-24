@@ -6,7 +6,7 @@
     padding: 0 15% 0 15%;
     margin-top: 30vh;
     margin-bottom: 10vh;
-    gap: 25%;
+    gap: 20%;
 }
 h3{
     font-size: 2rem;
@@ -20,7 +20,7 @@ h3{
 }
 .projectImage{
     width: 70vw;
-    height: auto;
+    height: 70vh;
 }
 
 @media (max-width:1000px){

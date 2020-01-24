@@ -7,6 +7,7 @@ import './ProjectDetail.css'
 
 const ProjectDetail = (props) => {
     const[project, setProject] = useState()
+
     useEffect(() => {
         firebase
         .firestore()
@@ -17,6 +18,15 @@ const ProjectDetail = (props) => {
         )
     }, [props.id])
 
+
+    let image 
+    if(project){
+        image = {
+            backgroundImage: "url("+ project.defaultImage +")",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+        }
+    }
 
     return(
         <main>
@@ -48,9 +58,14 @@ const ProjectDetail = (props) => {
                         </div>
                     </div>
                                 {
-                                    project.defaultImage &&
-                                    <img className='projectImage' src={project.defaultImage} alt='Projectimage'/>
+                                    project.defaultImage && 
+                                    <div style={image} className='projectImage'></div>
+                                 
                                 }
+                                {
+                                    
+                                }
+                                
                 </>
                 :
                     <h2>Fetching Project, hold on</h2>
