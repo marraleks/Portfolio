@@ -66,9 +66,10 @@ const Edit = (props) => {
                 <input input='text' onChange={updateValue} name='byline' placeholder='Very short description' value={project.byline}/>
                 <input input='text' onChange={updateValue} name='tech' placeholder='Techs used' value={project.tech}/>
                 <input input='text' onChange={updateValue} name='year' placeholder='Month and year' value={project.year}/>
-                <textarea input='text' onChange={updateValue} name='video' placeholder='iframe content' value={project.video}/>
-                
                 <textarea onChange={updateValue} name='description' placeholder='Description of the project' value={project.description}/>
+                <textarea input='text' onChange={updateValue} name='video' placeholder='iframe content' value={project.video}/>
+                <textarea input='text' onChange={updateValue} name='extra' placeholder='html elements' value={project.extra}/>
+                
                 {
                     project.defaultImage &&
                     <img src={project.defaultImage} alt='default'/>

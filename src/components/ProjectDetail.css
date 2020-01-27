@@ -1,13 +1,11 @@
-main.detail{
-    transition: 1s ease;
-}
+
 .projectContainer{
     width: 100vw;
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
     padding: 0 15% 0 15%;
-    margin-top: 30vh;
+    margin-top: 10vh;
     margin-bottom: 10vh;
     gap: 20%;
 }
@@ -27,9 +25,18 @@ h3{
    width: 70vw;
 }
 
-@media (max-width:1000px){
-    .projectContainer{
-        grid-auto-flow: row;
-    }
-    
+
+
+[data-vimeo-initialized="true"] {
+    box-sizing:border-box;
+    overflow:hidden;
+    width:100%;
+    display:grid;
+    place-items:center;
 }
+iframe{
+    width:80%;
+    margin:auto;
+}
+
+

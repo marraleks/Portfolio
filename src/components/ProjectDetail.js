@@ -4,11 +4,21 @@ import firebase from './firebase'
 import ProjectTitle from './ProjectTitle'
 import './ProjectDetail.css'
 import parse from 'html-react-parser'
+import Vimeo from '@u-wave/react-vimeo'
 
 
 const ProjectDetail = (props) => {
     const[project, setProject] = useState()
 
+    const scroll = () => {
+        if(window.pageYOffset === 0){
+            window.scrollTo({
+                left:0,
+                top:document.querySelector('#title-container').offsetHeight,
+                behavior: 'smooth'
+            })
+        }
+    }
     useEffect(() => {
         firebase
         .firestore()
@@ -17,17 +27,9 @@ const ProjectDetail = (props) => {
         .onSnapshot(
             snapshop => setProject(snapshop.data())
         )
+        window.setTimeout(scroll, 3000)
     }, [props.id])
 
-
-    let image 
-    if(project){
-        image = {
-            backgroundImage: "url("+ project.defaultImage +")",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-        }
-    }
     return(
         <main className='detail'>
             {
@@ -50,12 +52,6 @@ const ProjectDetail = (props) => {
                                     <div className="projectYear">- {project.year}</div>
                                 }
                         </div>
-                                {
-                                    project.id === 'utERuhYgZmRTmXp3UrUk' &&
-                                    <>
-                                    <h1>This is for the AI infographic project only</h1>
-                                    </>
-                                 }
                         <div>
                             <h3>Brief</h3>
                                 {
@@ -65,12 +61,15 @@ const ProjectDetail = (props) => {
                         </div>
                     </div>
                                 {
-                                    project.defaultImage && 
-                                    <div style={image} className='projectImage'></div>
+                                    project.video && 
+                                    <Vimeo
+                                    video={project.video}
+                                    width='1024px'
+                                  />
                                 }
                                 {
-                                    project.video && 
-                                <div className='projectVideo'>{ parse(project.video) }</div>
+                                    project.extra && 
+                                <div className='projectExtra'>{ parse(project.extra)}</div>
                                 }
                 </>
                 :

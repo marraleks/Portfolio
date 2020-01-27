@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@u-wave/react-vimeo": "^0.8.1",
     "firebase": "^7.6.2",
     "html-react-parser": "^0.10.0",
     "react": "^16.12.0",
@@ -15,7 +16,8 @@
     "react-icons": "^3.8.0",
     "react-masonry-css": "^1.0.14",
     "react-scripts": "3.3.0",
-    "react-spinners": "^0.8.0"
+    "react-spinners": "^0.8.0",
+    "react-vimeo": "^2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
