@@ -78,6 +78,7 @@ header p{
     .burger{
         display: block;
     }
+    
     header.visible{
         transform: translateY(0);
         background-color: #2B2A29;

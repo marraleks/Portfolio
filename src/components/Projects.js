@@ -64,7 +64,6 @@ const Projects = (props) => {
             :
             <ClipLoader/>
             }
-
         </main>
     )
 }

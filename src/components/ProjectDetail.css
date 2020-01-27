@@ -1,3 +1,6 @@
+main.detail{
+    transition: 1s ease;
+}
 .projectContainer{
     width: 100vw;
     display: grid;

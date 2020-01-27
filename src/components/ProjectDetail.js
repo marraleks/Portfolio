@@ -3,6 +3,7 @@ import './Project.css'
 import firebase from './firebase'
 import ProjectTitle from './ProjectTitle'
 import './ProjectDetail.css'
+import parse from 'html-react-parser'
 
 
 const ProjectDetail = (props) => {
@@ -27,9 +28,8 @@ const ProjectDetail = (props) => {
             backgroundPosition: 'center',
         }
     }
-
     return(
-        <main>
+        <main className='detail'>
             {
                 project 
                 ?
@@ -50,6 +50,12 @@ const ProjectDetail = (props) => {
                                     <div className="projectYear">- {project.year}</div>
                                 }
                         </div>
+                                {
+                                    project.id === 'utERuhYgZmRTmXp3UrUk' &&
+                                    <>
+                                    <h1>This is for the AI infographic project only</h1>
+                                    </>
+                                 }
                         <div>
                             <h3>Brief</h3>
                                 {
@@ -61,6 +67,10 @@ const ProjectDetail = (props) => {
                                 {
                                     project.defaultImage && 
                                     <div style={image} className='projectImage'></div>
+                                }
+                                {
+                                    project.video && 
+                                <div className='projectVideo'>{ parse(project.video) }</div>
                                 }
                 </>
                 :
