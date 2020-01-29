@@ -38,5 +38,41 @@ iframe{
     width:80%;
     margin:auto;
 }
+ .projectExtra{
+    justify-self: start;
+    width: 100vw;
+ }
+.utfordring{
+    color: black;
+    margin-left: 10%;
+}
 
+.utfordringtext{
+    font-family: 'Gilroy';
+    margin-left: 10%;
+}
+
+.pager{
+    width: 100vw;
+    height: 10vh;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    justify-content: space-between;
+    background-color: #2B2A29;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.pager a{
+    color: white;
+    text-decoration: none;
+}
+.pager a:hover{
+    color: #D1363A;
+}
+@media (max-width:1000px){
+    .projectContainer{
+        grid-auto-flow: row;
+    } 
+}
 

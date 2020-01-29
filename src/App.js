@@ -7,7 +7,6 @@ import Header from './components/Header'
 import Login from './components/Login'
 import Edit from './components/Edit'
 import ProjectDetail from './components/ProjectDetail'
-import Footer from './components/Footer'
 
 const Default = () => {
   navigate('/projects')
@@ -40,7 +39,6 @@ const App = () => {
         <Edit path='/edit/:id'/>
         <ProjectDetail path='/projects/:id'/>
       </Router>
-      <Footer/>
     </div>
   )
 }

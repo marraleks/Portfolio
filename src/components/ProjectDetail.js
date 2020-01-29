@@ -5,11 +5,14 @@ import ProjectTitle from './ProjectTitle'
 import './ProjectDetail.css'
 import parse from 'html-react-parser'
 import Vimeo from '@u-wave/react-vimeo'
+import { Link } from '@reach/router'
 
 
 const ProjectDetail = (props) => {
     const[project, setProject] = useState()
-
+    const[prev, setPrev] = useState()
+    const[next, setNext] = useState()
+    
     const scroll = () => {
         if(window.pageYOffset === 0){
             window.scrollTo({
@@ -28,6 +31,21 @@ const ProjectDetail = (props) => {
             snapshop => setProject(snapshop.data())
         )
         window.setTimeout(scroll, 3000)
+    }, [props.id])
+
+    useEffect( () => {
+        firebase
+        .firestore()
+        .collection('projects')
+        .orderBy('title')
+        .get()
+        .then( projects => {
+            const array = projects.docs.map(doc => doc.id)
+            const myPos = array.indexOf(props.id)
+            setNext(myPos + 1 === array.length ? array[0] : array[myPos + 1])
+            setPrev(myPos === 0 ? array[array.length - 1] : array[myPos - 1])
+            window.scrollTo({top:0})
+        })
     }, [props.id])
 
     return(
@@ -71,6 +89,10 @@ const ProjectDetail = (props) => {
                                     project.extra && 
                                 <div className='projectExtra'>{ parse(project.extra)}</div>
                                 }
+                                <div className='pager'>
+                                    <Link to={'/projects/' + prev}>prev project</Link>
+                                    <Link to={'/projects/' + next}>next project</Link>
+                                </div>
                 </>
                 :
                     <h2>Fetching Project, hold on</h2>

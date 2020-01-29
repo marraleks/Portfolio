@@ -61,3 +61,18 @@
     width:100%;
     height:100%;
 }
+
+
+@media (max-width:800px){
+    .project{
+        min-height: 40vh;
+    }
+    .afterHover{
+        opacity:1;
+    }
+    .project > .child .overlay{
+        background-color:rgba(0,0,0,0.6);
+    }
+
+
+}

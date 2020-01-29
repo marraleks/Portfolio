@@ -23,3 +23,9 @@
     bottom: 1vh;
     font-family: 'Gilroy';
 }
+
+@media (max-width:800px){
+    .subContainer h1{
+        font-size: 3rem;
+    }
+}

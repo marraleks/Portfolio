@@ -58,12 +58,18 @@ header p{
 } */
 
 @media (max-width:1000px){
-    .links{
+    header p{
         display: none;
     }
+    .none{
+        display: none;
+    } 
     header.visible{
         transform: translateY(0);
         background-color: #2B2A29;
+    }
+    header div{
+        gap: 2rem;
     }
     .header-containter{
         background-color: #2B2A29;
