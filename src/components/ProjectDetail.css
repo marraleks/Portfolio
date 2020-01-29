@@ -61,6 +61,7 @@ iframe{
 }
 
 .pager{
+    margin-top: 10vh;
     width: 100vw;
     height: 10vh;
     display: grid;
@@ -83,4 +84,15 @@ iframe{
         grid-auto-flow: row;
     } 
 }
+.epiws{
+    background: url('../img/EpiwsMockup.png');
+    height: 70vh;
+    width: 70vw;
+    display: block;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
