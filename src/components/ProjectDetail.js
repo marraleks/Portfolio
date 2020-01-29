@@ -69,6 +69,10 @@ const ProjectDetail = (props) => {
                                     project.year &&
                                     <div className="projectYear">- {project.year}</div>
                                 }
+                                {
+                                    project.link &&
+                                    <div className="projectLink">- {parse(project.link)}</div>
+                                }
                         </div>
                         <div>
                             <h3>Brief</h3>

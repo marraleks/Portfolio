@@ -15,9 +15,17 @@ h3{
     margin-top: 0;
 }
 
-.projectByline, .projectTech, .projectYear, .projectDescription{
+.projectByline, .projectTech, .projectYear, .projectDescription, .projectLink{
     font-family: 'Gilroy';
     color: #747474;
+}
+.projectLink a{
+    text-decoration: underline;
+    color: #747474;
+}
+img{
+    height: 200px;
+    width: 200px;
 }
 
 .projectImage{
