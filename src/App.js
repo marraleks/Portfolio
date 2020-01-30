@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Router, navigate } from "@reach/router"
+import { Router } from "@reach/router"
 import './App.css';
 import firebase from './components/firebase'
 import Projects from './components/Projects'
@@ -8,10 +8,7 @@ import Login from './components/Login'
 import Edit from './components/Edit'
 import ProjectDetail from './components/ProjectDetail'
 
-const Default = () => {
-  navigate('/projects')
-  return(<></>)
-}
+
 
 const App = () => {
 
@@ -33,8 +30,7 @@ const App = () => {
     <div>
       <Header signedIn={signedIn}/>
       <Router>
-        <Default path='/'/>
-        <Projects signedIn={signedIn} path='/projects'/>
+        <Projects default path='/projects' signedIn={signedIn}/>
         <Login signedIn={signedIn} setSignedIn={setSignedIn} path='/login'/>
         <Edit path='/edit/:id'/>
         <ProjectDetail path='/projects/:id'/>
