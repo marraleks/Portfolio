@@ -1,5 +1,5 @@
-This portfolio was created with [React]
+This portfolio was created with React
 
 ## Marius Aleksander Sletten Portfolio
 
-Hope you like!
+https://marraleks.github.io/projects
