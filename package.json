@@ -1,4 +1,5 @@
 {
+  "homepage": "http://marraleks.github.io/Portfolio",
   "name": "react-blog-template",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +10,7 @@
     "@testing-library/user-event": "^7.1.2",
     "@u-wave/react-vimeo": "^0.8.1",
     "firebase": "^7.6.2",
-    "html-react-parser": "^0.10.0",
+    "html-react-parser": "^0.10.0", 
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-firebase-file-uploader": "^2.4.3",
@@ -20,6 +21,8 @@
     "react-vimeo": "^2.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
