@@ -1,3 +1,36 @@
+main.detail{
+    padding:0;
+    justify-content: start;
+    background:white;
+    position:relative;
+}
+
+.parallax-overlay{
+    background:rgba(0,0,0,.7);
+    width:100vw;
+    height:100vh;
+    padding-top:10vh;
+    display:grid;
+    place-items:center;
+    color:#eee;
+    font-size:2rem;
+}
+
+.parallax-overlay > div{
+    position:sticky;
+    top:50vh;
+}
+
+.parallax-overlay h1{
+    font-weight:300;
+    padding:0;
+    margin: 0;
+    text-align: center;
+}
+.parallax-overlay p{
+    font-weight:bold;
+    margin:0 0 2rem 0;
+}
 
 .projectContainer{
     width: 100vw;
@@ -9,6 +42,7 @@
     margin-bottom: 10vh;
     gap: 20%;
 }
+
 h3{
     font-size: 1.5rem;
     color: #2B2A29;
@@ -23,17 +57,6 @@ h3{
     text-decoration: underline;
     color: #747474;
 }
-img{
-    height: 200px;
-    width: 200px;
-}
-
-.projectImage{
-   height: 70vh;
-   width: 70vw;
-}
-
-
 
 [data-vimeo-initialized="true"] {
     box-sizing:border-box;
@@ -84,6 +107,7 @@ iframe{
         grid-auto-flow: row;
     } 
 }
+
 .epiws{
     background: url('../img/EpiwsMockup.png');
     height: 70vh;
@@ -94,5 +118,38 @@ iframe{
     background-repeat: no-repeat;
     background-position: center;
 }
+.pelle{
+    background: url('../img/Pelle.png');
+    height: 70vh;
+    width: 70vw;
+    display: block;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5%;
+}
+.fonnts{
+    background: url('../img/fonnts.png');
+    height: 70vh;
+    width: 90vw;
+    display: block;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5%;
+}
 
+@media (max-width:750px){
 
+    .pelle{
+        height: 30vh;
+        
+    }
+}
+.projectExtra p{
+    font-family: 'Gilroy';
+    color: #747474;
+    padding: 0% 15% 0 15%;
+}
