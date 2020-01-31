@@ -1,8 +1,9 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useEffect} from 'react'
 import './Project.css'
 import firebase from './firebase'
 import './ProjectDetail.css'
 import parse from 'html-react-parser'
+import Vimeo from '@u-wave/react-vimeo'
 import { Link } from '@reach/router'
 
 
@@ -10,8 +11,6 @@ const ProjectDetail = (props) => {
     const[project, setProject] = useState()
     const[prev, setPrev] = useState()
     const[next, setNext] = useState()
-    const video = useRef()
-
     
     useEffect(() => {
         firebase
@@ -37,8 +36,6 @@ const ProjectDetail = (props) => {
             window.scrollTo({top:0})
         })
     }, [props.id])
-
-
 
     let styles = {}
     if(project){
@@ -96,13 +93,11 @@ const ProjectDetail = (props) => {
                         </div>
                     </div>
                                 {
-                                    project.htmlvideo && 
-                                    <div className='project-video'>
-                                        <video ref={video} poster={project.htmlvideoposter} loop controls>
-                                            <source src={project.htmlvideo} type="video/mp4" />
-                                        </video>
-                                            
-                                    </div>
+                                    project.video && 
+                                    <Vimeo
+                                    video={project.video}
+                                    width='1024px'
+                                  />
                                 }
                                 {
                                     project.extra && 
