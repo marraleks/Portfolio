@@ -38,8 +38,11 @@ const ProjectDetail = (props) => {
         })
     }, [props.id])
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 12757c968f957f515da808d888d7e21cea988450
     let styles = {}
     if(project){
         styles = {
