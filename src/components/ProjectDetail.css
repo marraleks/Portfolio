@@ -5,6 +5,20 @@ main.detail{
     position:relative;
 }
 
+.project-video{
+    width:80vw;
+    margin:auto;
+    display:grid;
+    place-items:center;
+    position:relative;
+}
+.project-video video{
+    width:100%;
+    outline: none;
+}
+
+
+
 .parallax-overlay{
     background:rgba(0,0,0,.7);
     width:100vw;
