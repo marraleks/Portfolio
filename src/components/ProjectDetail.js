@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import './Project.css'
 import firebase from './firebase'
-import ProjectTitle from './ProjectTitle'
 import './ProjectDetail.css'
 import parse from 'html-react-parser'
 import Vimeo from '@u-wave/react-vimeo'
@@ -13,15 +12,6 @@ const ProjectDetail = (props) => {
     const[prev, setPrev] = useState()
     const[next, setNext] = useState()
     
-    const scroll = () => {
-        if(window.pageYOffset === 0){
-            window.scrollTo({
-                left:0,
-                top:document.querySelector('#title-container').offsetHeight,
-                behavior: 'smooth'
-            })
-        }
-    }
     useEffect(() => {
         firebase
         .firestore()
@@ -30,7 +20,6 @@ const ProjectDetail = (props) => {
         .onSnapshot(
             snapshop => setProject(snapshop.data())
         )
-        window.setTimeout(scroll, 3000)
     }, [props.id])
 
     useEffect( () => {
@@ -48,13 +37,32 @@ const ProjectDetail = (props) => {
         })
     }, [props.id])
 
+    let styles = {}
+    if(project){
+        styles = {
+            parallax:{
+                backgroundImage: 'url(' + project.defaultImage + ')',
+                height:'100vh',
+                width:'100vw',
+                backgroundAttachment:'fixed',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center center',
+                backgroundRepeat:'no-repeat',
+            },
+        }
+    } 
+
     return(
         <main className='detail'>
             {
                 project 
                 ?
                 <>
-                    <ProjectTitle title={project.title} className='project-detail' />
+                        <div style={styles.parallax}>
+                            <div className='parallax-overlay'>
+                                <h1>{project.title}<span>.</span></h1>
+                            </div>  
+                        </div> 
                     <div className='projectContainer'>
                         <div>
                             <h3>Info</h3>
