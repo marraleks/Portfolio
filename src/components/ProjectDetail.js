@@ -69,6 +69,7 @@ const ProjectDetail = (props) => {
                     <div className='projectContainer'>
                         <div>
                             <h3>Info</h3>
+                        
                                 {
                                     project.byline &&
                                     <div className='projectByline'>- {project.byline}</div>
@@ -85,6 +86,7 @@ const ProjectDetail = (props) => {
                                     <div className="projectLink">- {parse(project.link)}</div>
                                 }
                         </div>
+                        
                         <div>
                             <h3>Brief</h3>
                                 {

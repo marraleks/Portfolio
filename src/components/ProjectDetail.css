@@ -8,9 +8,6 @@ main.detail{
 .project-video{
     width:80vw;
     margin:auto;
-    display:grid;
-    place-items:center;
-    position:relative;
 }
 .project-video video{
     width:100%;
@@ -79,23 +76,11 @@ h3{
     display:grid;
     place-items:center;
 }
-iframe{
-    width:80%;
-    margin:auto;
-}
+
  .projectExtra{
     justify-self: start;
     width: 100vw;
  }
-.utfordring{
-    color: black;
-    margin-left: 10%;
-}
-
-.utfordringtext{
-    font-family: 'Gilroy';
-    margin-left: 10%;
-}
 
 .pager{
     margin-top: 10vh;
@@ -147,6 +132,17 @@ iframe{
     background: url('../img/fonnts.png');
     height: 70vh;
     width: 90vw;
+    display: block;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5%;
+}
+.skahr{
+    background: url('../img/skahr.png');
+    height: 70vh;
+    width: 80vw;
     display: block;
     margin: 0 auto;
     background-size: cover;
