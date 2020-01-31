@@ -36,6 +36,7 @@ const Projects = (props) => {
                 <h1>I am a UX designer<br/>who loves<br/>Front-end<br/>development<span className="white">.</span></h1>
                 <h5>scroll</h5>
             </div>
+            
             {
                 props.signedIn &&
                 <div className='add'>
