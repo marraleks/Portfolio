@@ -51,6 +51,8 @@ const ProjectDetail = (props) => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center',
                 backgroundRepeat:'no-repeat',
+                display: 'hidden',
+                backgroundColor:'#2B2A29',
             },
         }
     } 
