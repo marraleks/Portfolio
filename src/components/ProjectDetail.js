@@ -27,7 +27,7 @@ const ProjectDetail = (props) => {
         firebase
         .firestore()
         .collection('projects')
-        .orderBy('title')
+        .orderBy('order')
         .get()
         .then( projects => {
             const array = projects.docs.map(doc => doc.id)
@@ -57,35 +57,52 @@ const ProjectDetail = (props) => {
         }
     } 
 
+    let mobile = {}
+    if(project){
+    mobile = {
+        backgroundImage: 'url(' + project.defaultImage + ')',
+        height:'30vh',
+        width:'100vw',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+    }
+}
+
     return(
         <main className='detail'>
             {
                 project 
                 ?
                 <>
-                        <div style={styles.parallax}>
+                        <div className='parallax' style={styles.parallax}>
                             <div className='parallax-overlay'>
                                 <h1>{project.title}<span>.</span></h1>
                             </div>  
                         </div> 
+                        <div className='mobileIntro' style={mobile}>
+                            <div className='overlayIntro'>
+                                <h1>{project.title}<span>.</span></h1>
+                            </div> 
+                        </div>
+                    
                     <div className='projectContainer'>
                         <div>
                             <h3>Info</h3>
                         
                                 {
                                     project.byline &&
-                                    <div className='projectByline'>- {project.byline}</div>
+                                    <div className='projectByline'><b>Type:</b> {project.byline}</div>
                                 }
                                 {    project.tech &&
-                                    <div className='projectTech'>- {project.tech}</div>
+                                    <div className='projectTech'><b>Tech:</b> {project.tech}</div>
                                 }
                                 {
                                     project.year &&
-                                    <div className="projectYear">- {project.year}</div>
+                                    <div className="projectYear"><b>Date:</b> {project.year}</div>
                                 }
                                 {
                                     project.link &&
-                                    <div className="projectLink">- {parse(project.link)}</div>
+                                    <div className="projectLink">{parse(project.link)}</div>
                                 }
                         </div>
                         

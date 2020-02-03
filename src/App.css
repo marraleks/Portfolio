@@ -55,3 +55,12 @@ button, .button{
   text-align: center;
   margin-top: 1rem;
 }
+
+.mobileIntro{
+  display:none;
+}
+@media (max-width:750px){
+  .mobileIntro{
+    display:block;
+  }
+}

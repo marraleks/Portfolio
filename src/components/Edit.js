@@ -62,6 +62,7 @@ const Edit = (props) => {
         <main className='edit'>
             <h1>Edit project: {project.title}</h1>
             <form onSubmit={saveProject}>
+                <input input='text' onChange={updateValue} name='order' value={project.order}/>
                 <input input='text' onChange={updateValue} name='title' value={project.title}/>
                 <input input='text' onChange={updateValue} name='byline' placeholder='Very short description' value={project.byline}/>
                 <input input='text' onChange={updateValue} placeholder='video url' name='htmlvideo' value={project.htmlvideo}/>

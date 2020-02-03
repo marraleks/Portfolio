@@ -23,7 +23,7 @@ const Projects = (props) => {
         firebase
         .firestore()
         .collection('projects')
-        .orderBy('title')
+        .orderBy('order')
         .onSnapshot(
             snapshop => setProjects(snapshop.docs)
         )
@@ -34,7 +34,7 @@ const Projects = (props) => {
             <div className='intro'>
                 <h1>Marius Aleksander<br/>Sletten<span className="red">.</span></h1>
                 <h1>I am a UX designer<br/>who loves<br/>Front-end<br/>development<span className="white">.</span></h1>
-                <h5>scroll</h5>
+                <h5 class=''>scroll</h5>
             </div>
             
             {

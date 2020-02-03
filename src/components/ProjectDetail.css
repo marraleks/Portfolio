@@ -105,6 +105,7 @@ h3{
     .projectContainer{
         grid-auto-flow: row;
     } 
+
 }
 
 .epiws{
@@ -140,36 +141,79 @@ h3{
     margin-bottom: 5%;
 }
 .skahr{
-    background: url('../img/skahr.png');
-    height: 70vh;
-    width: 80vw;
+    background: url('../img/Skahrtest.png');
+    height: 140vh;
+    width: 100vw;
     display: block;
     margin: 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 5%;
+    margin-top: -10%;
+}
+.projectExtra div{
+    display: grid;
+    grid-auto-flow: column;
+    padding: 0% 15% 0% 15%;
+    gap: 5%;
+
+}
+.projectExtra p{
+    font-family: 'Gilroy';
+    color: #747474;
+   
+}
+
+.mobileIntro{
+    background-color: #2B2A29;
+    margin-top: 10vh; 
+}
+.overlayIntro{
+    background:rgba(0,0,0,.7);
+    height: 30vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    text-align: center;
 }
 
 @media (max-width:750px){
+
+    .projectExtra div{
+        display: block;
+        padding: 0 0% 0% 5%; 
+    }
+
+    .projectContainer{
+        padding: 0 5% 0 5%; 
+    }
     .parallax-overlay h1{
         font-size: 2.5rem;
     }
     .epiws{
         height: 50vh;
+        width: 90vw;
     }
     .pelle{
-        height: 20vh;   
+        height: 23vh;  
+        width: 90vw; 
     }
     .fonnts{
         height: 50vh;
+        width: 90vw;
     }
     .skahr{
-        height: 40vh;
+        height: 50vh;
+        width: 100vw;
+    }
+    .projectExtra p{
+        font-family: 'Gilroy';
+        color: #747474;
+        padding: 5% 5% 0 0%;
+    }
+    .parallax{
+        display:none;
     }
 }
-.projectExtra p{
-    font-family: 'Gilroy';
-    color: #747474;
-    padding: 0% 15% 0 15%;
-}
+
