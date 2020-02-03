@@ -1,6 +1,6 @@
 {
-  "homepage": "http://marraleks.github.io/Portfolio/",
   "name": "Portfolio",
+  "homepage": "http://marraleks.github.io/Portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Router } from "@reach/router"
+import { Router, navigate } from "@reach/router"
 import './App.css';
 import firebase from './components/firebase'
 import Projects from './components/Projects'

@@ -152,9 +152,11 @@ h3{
 }
 
 @media (max-width:750px){
-
+    .parallax-overlay h1{
+        font-size: 2.5rem;
+    }
     .pelle{
-        height: 30vh;
+        height: 20vh;
         
     }
 }
