@@ -17,7 +17,7 @@ const Projects = (props) => {
                 timestap: firebase.firestore.FieldValue.serverTimestamp()
             }
         )
-        .then( doc  => navigate('/edit/' + doc.id) )
+        .then( doc  => navigate(process.env.PUBLIC_URL + '/edit/' + doc.id) )
     }
     useEffect(() => {
         firebase
@@ -34,7 +34,10 @@ const Projects = (props) => {
             <div className='intro'>
                 <h1>Marius Aleksander<br/>Sletten<span className="red">.</span></h1>
                 <h1>I am a UX designer<br/>who loves<br/>Front-end<br/>development<span className="white">.</span></h1>
-                <h5 class=''>scroll</h5>
+                <div className='scrollContainer'>
+                    <h5>Scrolldown</h5>
+                    <div className='scroll-line'></div>
+                </div>
             </div>
             
             {

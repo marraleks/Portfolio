@@ -128,8 +128,8 @@ const ProjectDetail = (props) => {
                                 <div className='projectExtra'>{ parse(project.extra)}</div>
                                 }
                                 <div className='pager'>
-                                    <Link to={'/projects/' + prev}>prev project</Link>
-                                    <Link to={'/projects/' + next}>next project</Link>
+                                    <Link to={process.env.PUBLIC_URL + '/projects/' + prev}>prev project</Link>
+                                    <Link to={process.env.PUBLIC_URL + '/projects/' + next}>next project</Link>
                                 </div>
                 </>
                 :

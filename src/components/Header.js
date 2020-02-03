@@ -26,7 +26,7 @@ const Header = (props) => {
             <FiMenu className='burger' color='white' size='32' onClick={ () => setShow(!show) }/>
             <header className={show ? 'visible' : ''} onClick={() => setShow(false)}>
                 <div>
-                    <Link getProps={isPartiallyActive} to ='/projects'>mas<span>.</span></Link>
+                    <Link getProps={isPartiallyActive} to={process.env.PUBLIC_URL + '/projects'}>mas<span>.</span></Link>
                 </div>
                 <div className='links'>
                     <p>Find me on:</p>
@@ -36,7 +36,7 @@ const Header = (props) => {
                             <a href="mailto:marraleks@hotmail.com" target="_top"><IoMdMail size='24'/><MdOpenInNew className='none' size='12' opacity='70%'/></a>
                         </div>
                 </div>
-                <Link to='/login'>hei</Link>
+                <Link to={process.env.PUBLIC_URL + '/login'}></Link>
             </header>
         </div>
     )

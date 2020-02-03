@@ -13,14 +13,23 @@
     margin-left: 10%;
 }
 
-.intro h5 {
-    text-align: center;
-    align-content: end;
+.intro .scrollContainer {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 1vh;
-    font-family: 'Gilroy';
+    left: 85%;
+    bottom: 10%;
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    gap: 5%;
+    transform: rotate(90deg);
+}
+.intro h5{
+    text-align: center;
+}
+.intro .scroll-line{
+    height: 5px;
+    width: 80px;
+    background-color: white;
 }
 
 .add{
@@ -78,6 +87,14 @@ h5{
    
  
   @media (max-width:800px){
+    .intro{
+        height: 70vh;
+    }
+
+    .intro .scrollContainer{
+        display: none;
+    }
+
     .intro h1{
         font-size: 3rem;
     }
@@ -87,6 +104,6 @@ h5{
 }
   @media (max-width:700px){
     .intro h1{
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 }

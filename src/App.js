@@ -29,7 +29,7 @@ const App = () => {
   return(
     <div>
       <Header signedIn={signedIn}/>
-      <Router>
+      <Router basepath={process.env.PUBLIC_URL}>
         <Projects default path='/projects' signedIn={signedIn}/>
         <Login signedIn={signedIn} setSignedIn={setSignedIn} path='/login'/>
         <Edit path='/edit/:id'/>
