@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.dfb58798.chunk.css",
-    "main.js": "/Portfolio/static/js/main.6759d85e.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.6759d85e.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.ed271e06.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.ed271e06.js.map",
-    "static/js/2.98c3af6e.chunk.js": "/Portfolio/static/js/2.98c3af6e.chunk.js",
-    "static/js/2.98c3af6e.chunk.js.map": "/Portfolio/static/js/2.98c3af6e.chunk.js.map",
-    "index.html": "/Portfolio/index.html",
-    "precache-manifest.825d15d1985448a9ce6d8f443d3486a6.js": "/Portfolio/precache-manifest.825d15d1985448a9ce6d8f443d3486a6.js",
-    "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.dfb58798.chunk.css.map": "/Portfolio/static/css/main.dfb58798.chunk.css.map",
-    "static/js/2.98c3af6e.chunk.js.LICENSE": "/Portfolio/static/js/2.98c3af6e.chunk.js.LICENSE",
-    "static/media/ProjectDetail.css": "/Portfolio/static/media/fonnts.bd9d065b.png",
-    "static/media/App.css": "/Portfolio/static/media/IntegralCF-Bold.85f9a2bf.otf"
+    "main.css": "/static/css/main.f9987c36.chunk.css",
+    "main.js": "/static/js/main.8315cfc8.chunk.js",
+    "main.js.map": "/static/js/main.8315cfc8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c2b20a0b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c2b20a0b.js.map",
+    "static/js/2.dca8e7d7.chunk.js": "/static/js/2.dca8e7d7.chunk.js",
+    "static/js/2.dca8e7d7.chunk.js.map": "/static/js/2.dca8e7d7.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e8c1cf68ad4921516611269f62fa131a.js": "/precache-manifest.e8c1cf68ad4921516611269f62fa131a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.f9987c36.chunk.css.map": "/static/css/main.f9987c36.chunk.css.map",
+    "static/js/2.dca8e7d7.chunk.js.LICENSE": "/static/js/2.dca8e7d7.chunk.js.LICENSE",
+    "static/media/ProjectDetail.css": "/static/media/fonnts.bd9d065b.png",
+    "static/media/App.css": "/static/media/IntegralCF-Bold.85f9a2bf.otf"
   },
   "entrypoints": [
-    "static/js/runtime-main.ed271e06.js",
-    "static/js/2.98c3af6e.chunk.js",
-    "static/css/main.dfb58798.chunk.css",
-    "static/js/main.6759d85e.chunk.js"
+    "static/js/runtime-main.c2b20a0b.js",
+    "static/js/2.dca8e7d7.chunk.js",
+    "static/css/main.f9987c36.chunk.css",
+    "static/js/main.8315cfc8.chunk.js"
   ]
 }
