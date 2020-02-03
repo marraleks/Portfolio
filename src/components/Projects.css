@@ -15,8 +15,8 @@
 
 .intro .scrollContainer {
     position: absolute;
-    left: 85%;
-    bottom: 14%;
+    left: 80%;
+    bottom: 5%;
     display: grid;
     place-items: center;
     grid-auto-flow: column;
@@ -29,7 +29,7 @@
 .intro .scroll-line{
     margin-top: 2px;
     height: 8px;
-    width: 120px;
+    width: 150px;
     background-color: white;
     margin-left: 10px;
 }
