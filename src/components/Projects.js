@@ -37,6 +37,7 @@ const Projects = (props) => {
                 <div className='scrollContainer'>
                     <h5>Scrolldown</h5>
                     <div className='scroll-line'></div>
+                    <div className='scroll-line2'></div>    
                 </div>
             </div>
             
@@ -46,7 +47,6 @@ const Projects = (props) => {
                     <IoIosAddCircle className='edit-icons' onClick={addProject}/>
                 </div>
             }
-                
             <h2>Projects<span>.</span></h2>
             {
                     projects.length > 0

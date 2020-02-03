@@ -16,20 +16,22 @@
 .intro .scrollContainer {
     position: absolute;
     left: 85%;
-    bottom: 10%;
+    bottom: 14%;
     display: grid;
     place-items: center;
     grid-auto-flow: column;
-    gap: 5%;
     transform: rotate(90deg);
 }
 .intro h5{
     text-align: center;
 }
+
 .intro .scroll-line{
-    height: 5px;
-    width: 80px;
+    margin-top: 2px;
+    height: 8px;
+    width: 120px;
     background-color: white;
+    margin-left: 10px;
 }
 
 .add{
