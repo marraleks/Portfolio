@@ -19,23 +19,23 @@ const Project = (props) => {
         }
     }
 
-const styles = {
-    backgroundImage: "url("+ props.data.defaultImage +")",
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundColor: '#2B2A29',
-    backgroundRepeat: 'no-repeat',
-}
+    const styles = {
+        backgroundImage: "url("+ props.data.defaultImage +")",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundColor: '#2B2A29',
+        backgroundRepeat: 'no-repeat',
+    }
 
     return(
        
-        <div className='project'>
-            <div className="afterHover" onClick={ () => navigate(process.env.PUBLIC_URL + '/projects/' + props.id)}> 
+        <div className={props.comingsoon ? 'spec project':'project'}>
+            <div className="afterHover" onClick={ props.comingsoon ? '' : () => navigate(process.env.PUBLIC_URL + '/projects/' + props.id)}> 
                 <h1>{props.data.title}</h1>
                 <p>&mdash; view &mdash;</p>
             </div>
             <div className='child' style={styles}>
-                    <div className='overlay' onClick={ () => navigate(process.env.PUBLIC_URL + '/projects/' + props.id)}></div>
+                    <div className='overlay' onClick={ props.comingsoon ? '' : () => navigate(process.env.PUBLIC_URL + '/projects/' + props.id)}></div>
             </div>
             {
                 props.signedIn &&

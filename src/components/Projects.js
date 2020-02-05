@@ -23,7 +23,7 @@ const Projects = (props) => {
         firebase
         .firestore()
         .collection('projects')
-        .orderBy('order')
+        .orderBy('order', 'asc')
         .onSnapshot(
             snapshop => setProjects(snapshop.docs)
         )
@@ -58,10 +58,17 @@ const Projects = (props) => {
                       }}
                     className="my-masonry-grid"
                     columnClassName="my-masonry-grid_column">
-                    {/* array of JSX items */}
                 {
                     projects.map(
-                    project => <Project key={project.id} data={project.data()} id={project.id} signedIn={props.signedIn} />
+                        (project, index) => {
+                        if( (index + 1 === projects.length) && (projects.length % 2 !== 0) ){
+                            return
+                        }
+                        return <Project 
+                                comingsoon={
+                                    ((index + 1 === projects.length) && (projects.length % 2 === 0)) ?true:false} 
+                                    key={project.id} data={project.data()} id={project.id} signedIn={props.signedIn} />
+                        }
                     )
                 }
             </Masonry>
