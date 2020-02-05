@@ -35,11 +35,12 @@ const Projects = (props) => {
                 <h1>Marius Aleksander<br/>Sletten<span className="red">.</span></h1>
                 <h1>I am a UX designer<br/>who loves<br/>Front-end<br/>development<span className="white">.</span></h1>
                 <div className='scrollContainer'>
-                    <h5>Scrolldown</h5>
+                    <h5>Scroll down</h5>
                     <div className='scroll-line'></div>
                     <div className='scroll-line2'></div>    
                 </div>
             </div>
+            
             
             {
                 props.signedIn &&

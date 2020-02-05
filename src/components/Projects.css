@@ -15,8 +15,8 @@
 
 .intro .scrollContainer {
     position: absolute;
-    left: 80%;
-    bottom: 5%;
+    right: -7%;
+    bottom: 20%;
     display: grid;
     place-items: center;
     grid-auto-flow: column;
@@ -24,11 +24,12 @@
 }
 .intro h5{
     text-align: center;
+    font-size: 2rem;
 }
 
 .intro .scroll-line{
-    margin-top: 2px;
-    height: 8px;
+    margin-top: 6px;
+    height: 22px;
     width: 150px;
     background-color: white;
     margin-left: 10px;
@@ -87,14 +88,14 @@ h5{
     background-clip: padding-box;
   }
    
- 
+ @media (max-width: 1000px){
+    .intro .scrollContainer{
+        display: none;
+    }
+ }
   @media (max-width:800px){
     .intro{
         height: 70vh;
-    }
-
-    .intro .scrollContainer{
-        display: none;
     }
 
     .intro h1{
