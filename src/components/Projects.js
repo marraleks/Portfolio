@@ -62,6 +62,7 @@ const Projects = (props) => {
                     projects.map(
                         (project, index) => {
                         if( (index + 1 === projects.length) && (projects.length % 2 !== 0) ){
+                            // eslint-disable-next-line
                             return
                         }
                         return <Project 
