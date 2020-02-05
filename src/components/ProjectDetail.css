@@ -215,5 +215,9 @@ h3{
     .parallax{
         display:none;
     }
+    .pager a:hover{
+        color: white;
+    }
+   
 }
 

@@ -22,6 +22,9 @@ a{
 a:hover{
   color: #D1363A;
 }
+a:active{
+  color: #D1363A;
+}
 
 main{
   min-height: 100vh;
@@ -63,4 +66,7 @@ button, .button{
   .mobileIntro{
     display:block;
   }
+  a:hover{
+    color: white;
+}
 }
