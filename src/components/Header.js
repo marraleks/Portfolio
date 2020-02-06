@@ -20,7 +20,7 @@ const Header = () => {
                 </div>
                 <div className='links'>
                         <div>
-                        <Link getProps={isPartiallyActive} to={process.env.PUBLIC_URL + '/projects'}>work<span>.</span></Link>
+                        <Link  getProps={isPartiallyActive} to={process.env.PUBLIC_URL + '/projects'}>work<span>.</span></Link>
                         <Link getProps={isPartiallyActive} to={process.env.PUBLIC_URL + '/about'}>about<span>.</span></Link>
                         </div>
                 </div>

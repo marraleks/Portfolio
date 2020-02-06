@@ -55,6 +55,10 @@ header p{
     font-family: 'Gilroy';
 }
 
+[aria-current="page"], .active {
+    text-decoration: line-through;
+  }
+
 
 
 @media (max-width:1000px){

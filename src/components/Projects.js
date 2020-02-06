@@ -18,7 +18,6 @@ const Projects = (props) => {
         )
         .then( doc  => navigate(process.env.PUBLIC_URL + '/edit/' + doc.id) )
     }
-    
 
     return(
         <main>
