@@ -13,6 +13,17 @@ import ProjectDetail from './components/ProjectDetail'
 const App = () => {
 
   const [signedIn, setSignedIn] = useState(false)
+  const [projects, setProjects] = useState([])
+
+    useEffect(() => {
+        firebase
+        .firestore()
+        .collection('projects')
+        .orderBy('order', 'asc')
+        .onSnapshot(
+            snapshop => setProjects(snapshop.docs)
+        )
+    }, [])
 
   useEffect(() => {
     firebase.auth().onAuthStateChanged(
@@ -30,7 +41,7 @@ const App = () => {
     <div>
       <Header signedIn={signedIn}/>
       <Router basepath={process.env.PUBLIC_URL}>
-        <Projects default path='/projects' signedIn={signedIn}/>
+        <Projects projects={projects} default path='/projects' signedIn={signedIn}/>
         <Login signedIn={signedIn} setSignedIn={setSignedIn} path='/login'/>
         <Edit path='/edit/:id'/>
         <ProjectDetail path='/projects/:id'/>
