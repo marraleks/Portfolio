@@ -51,7 +51,7 @@
 }
 @keyframes scroller{
     0% { left: 0px;}
-    100% { left: 400px;}
+    100% { left: 500px;}
 }
 @keyframes boxremove{
     0% { left: 0px;}
