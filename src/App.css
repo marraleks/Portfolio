@@ -6,6 +6,10 @@
   font-family: 'Gilroy';
   src: url('./fonts/Gilroy-Light.otf');
 }
+@font-face{
+  font-family: 'GilroyB';
+  src: url('./fonts/Gilroy-ExtraBold.otf');
+}
 
 *{
   box-sizing: border-box;
@@ -20,10 +24,7 @@ a{
   color: black;
 }
 a:hover{
-  color: #D1363A;
-}
-a:active{
-  color: #D1363A;
+  text-decoration: line-through;  
 }
 
 main{

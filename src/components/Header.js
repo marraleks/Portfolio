@@ -1,17 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Link } from "@reach/router"
 import './Header.css'
-import { IoLogoLinkedin } from "react-icons/io";
-import { IoLogoGithub } from "react-icons/io";
-import { IoMdMail } from "react-icons/io";
-import { FiMenu } from "react-icons/fi";
-import { MdOpenInNew } from "react-icons/md";
 
-
-
-
-const Header = (props) => {
-    const [show, setShow] = useState(false)
+const Header = () => {
 
     const isPartiallyActive = ({
         isPartiallyCurrent
@@ -23,17 +14,14 @@ const Header = (props) => {
 
     return(
         <div className='header-containter'>
-            <FiMenu className='burger' color='white' size='32' onClick={ () => setShow(!show) }/>
-            <header className={show ? 'visible' : ''} onClick={() => setShow(false)}>
+            <header >
                 <div>
                     <Link getProps={isPartiallyActive} to={process.env.PUBLIC_URL + '/projects'}>mas<span>.</span></Link>
                 </div>
                 <div className='links'>
-                    <p>Find me on:</p>
                         <div>
-                            <a href='https://www.linkedin.com/in/marius-aleksander-sletten-92aa3716a/' target="_blank" rel="noopener noreferrer"><IoLogoLinkedin size='24'/> <MdOpenInNew className='none' size='12' opacity='70%'/></a>
-                            <a href='https://github.com/marraleks' target="_blank" rel="noopener noreferrer"><IoLogoGithub size='24'/> <MdOpenInNew className='none' size='12' opacity='70%'/></a>
-                            <a href="mailto:marraleks@hotmail.com" target="_top"><IoMdMail size='24'/><MdOpenInNew className='none' size='12' opacity='70%'/></a>
+                        <Link getProps={isPartiallyActive} to={process.env.PUBLIC_URL + '/projects'}>work<span>.</span></Link>
+                        <Link getProps={isPartiallyActive} to={process.env.PUBLIC_URL + '/about'}>about<span>.</span></Link>
                         </div>
                 </div>
             </header>

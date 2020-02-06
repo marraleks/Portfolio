@@ -34,7 +34,7 @@ header div{
     height:100%;
     grid-auto-flow: column;
     align-items:center;
-    gap:1rem;
+    gap:2rem;
 }
 
 header a{
@@ -43,6 +43,9 @@ header a{
     display: grid;
     grid-auto-flow: column;
 }
+header .links div{
+    font-family: 'GilroyB';
+} 
 
 span {
     color: #D1363A;
@@ -52,9 +55,7 @@ header p{
     font-family: 'Gilroy';
 }
 
-/* [aria-current='page'], .active{
-    text-decoration: line-through;
-} */
+
 
 @media (max-width:1000px){
     header p{

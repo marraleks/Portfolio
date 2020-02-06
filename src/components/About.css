@@ -1,0 +1,35 @@
+
+.AboutContainer{
+    display: grid;
+    grid-auto-flow: column;
+    padding: 0 10% 0 10%;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    background-color: #2B2A29;
+}
+.about{
+    padding-right: 15vh;
+}
+.AboutContainer div h3{
+    color: #D1363A;
+}
+.AboutContainer div h4, p, a{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+}
+.AboutContainer div p{
+    font-family: 'Gilroy';
+}
+.AboutContainer .contact p{
+    font-family: 'Integral';
+}
+
+@media (max-width:1000px){
+    .AboutContainer{
+        grid-auto-flow: row;
+        padding: 0 5% 0 5%;
+    } 
+
+}

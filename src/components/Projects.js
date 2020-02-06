@@ -8,8 +8,7 @@ import ClipLoader from "react-spinners/ClipLoader"
 import Masonry from 'react-masonry-css'
 
 const Projects = (props) => {
-    
-
+   
     const addProject = () => {
         firebase.firestore().collection('projects').add(
             {

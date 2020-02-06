@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import Header from './components/Header'
 import Login from './components/Login'
 import Edit from './components/Edit'
+import About from './components/About'
 import ProjectDetail from './components/ProjectDetail'
 
 
@@ -40,11 +41,13 @@ const App = () => {
   return(
     <div>
       <Header signedIn={signedIn}/>
-      <Router basepath={process.env.PUBLIC_URL}>
-        <Projects projects={projects} default path='/projects' signedIn={signedIn}/>
-        <Login signedIn={signedIn} setSignedIn={setSignedIn} path='/login'/>
-        <Edit path='/edit/:id'/>
-        <ProjectDetail path='/projects/:id'/>
+      <Router basepath={process.env.PUBLIC_URL} >
+          <Projects projects={projects} default path='/projects' signedIn={signedIn}/>
+          <Login signedIn={signedIn} setSignedIn={setSignedIn} path='/login'/>
+          <Edit path='/edit/:id'/>
+          <ProjectDetail path='/projects/:id'/>
+          <About path={'/about'}/>
+   
       </Router>
     </div>
   )
