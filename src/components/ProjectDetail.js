@@ -32,7 +32,6 @@ const ProjectDetail = (props) => {
         .then( projects => {
             const array = projects.docs.map(doc => doc.id)
             const myPos = array.indexOf(props.id)
-            console.log(myPos)
             setNext(myPos + 2 === array.length ? array[0] : array[myPos + 1])
             setPrev(myPos === 0 ? array[array.length - 2] : array[myPos - 1])
             window.scrollTo({top:0})
