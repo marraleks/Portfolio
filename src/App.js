@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { Router, } from "@reach/router"
 import './App.css';
 import firebase from './components/firebase'
+import Home from './components/Home'
 import Projects from './components/Projects'
 import Header from './components/Header'
 import Login from './components/Login'
@@ -42,12 +43,12 @@ const App = () => {
     <div>
       <Header signedIn={signedIn}/>
       <Router basepath={process.env.PUBLIC_URL} >
-          <Projects projects={projects} default path='/projects' signedIn={signedIn}/>
+          <Home default path='/home'/>
+          <Projects projects={projects} path='/projects' signedIn={signedIn}/>
           <Login signedIn={signedIn} setSignedIn={setSignedIn} path='/login'/>
           <Edit path='/edit/:id'/>
           <ProjectDetail path='/projects/:id'/>
-          <About path={'/about'}/>
-   
+          <About path='/about'/>
       </Router>
     </div>
   )

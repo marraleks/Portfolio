@@ -4,20 +4,34 @@
     grid-auto-flow: column;
     padding: 0 10% 0 10%;
     width: 100vw;
-    height: 100%;
+    height: 90vh;
     align-items: center;
     background-color: #2B2A29;
 }
 .about{
-    padding-right: 15vh;
+    padding-right: 15vw;
 }
+
 .AboutContainer div h3{
     color: #D1363A;
+    padding-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+.AboutContainer div h4{
+   font-size: 1.2rem;
+   margin-top: 1rem;
 }
 .AboutContainer div h4, p, a{
     color: #FFFFFF;
     text-decoration: none;
     display: block;
+}
+.AboutContainer a{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 .AboutContainer div p{
     font-family: 'Gilroy';
@@ -25,11 +39,17 @@
 .AboutContainer .contact p{
     font-family: 'Integral';
 }
+.AboutContainer .about p{
+    font-size: 1.3rem;
+}
 
-@media (max-width:1000px){
+@media (max-width:900px){
     .AboutContainer{
         grid-auto-flow: row;
-        padding: 0 5% 0 5%;
+        padding: 10% 5% 10% 5%;
     } 
+    .about{
+        padding-right: 0;
+    }
 
 }

@@ -16,7 +16,7 @@ const Header = () => {
         <div className='header-containter'>
             <header >
                 <div>
-                    <Link getProps={isPartiallyActive} to={process.env.PUBLIC_URL + '/projects'}>mas<span>.</span></Link>
+                    <Link getProps={isPartiallyActive} to={process.env.PUBLIC_URL + '/home'}>mas<span>.</span></Link>
                 </div>
                 <div className='links'>
                         <div>

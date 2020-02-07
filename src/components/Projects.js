@@ -21,15 +21,7 @@ const Projects = (props) => {
 
     return(
         <main>
-            <div className='intro'>
-                <h1>Marius Aleksander<br/>Sletten<span className="red">.</span></h1>
-                <h1>I am a UX designer<br/>who loves<br/>Front-end<br/>development<span className="white">.</span></h1>
-                <div className='scrollContainer'>
-                    <h5>Scroll down</h5>
-                    <div className='scroll-line'></div>
-                    <div className='scroll-line2'></div>    
-                </div>
-            </div>
+            
             
             
             {
@@ -38,7 +30,7 @@ const Projects = (props) => {
                     <IoIosAddCircle className='edit-icons' onClick={addProject}/>
                 </div>
             }
-            <h2>Projects<span>.</span></h2>
+            <h2 className='animated slideInRight'>Projects<span>.</span></h2>
             {
                     props.projects.length > 0
                     ?

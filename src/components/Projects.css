@@ -1,63 +1,3 @@
-.intro {
-    width: 100vw;
-    height: 90vh;
-    background-color: #2B2A29;
-    position: relative;
-    display: grid;
-    align-content: center;
-}
-
-.intro h1{
-    font-size: 3.5rem;
-    margin: 0;
-    margin-left: 10%;
-}
-
-.intro .scrollContainer {
-    position: absolute;
-    right: -7%;
-    bottom: 20%;
-    display: grid;
-    place-items: center;
-    grid-auto-flow: column;
-    transform: rotate(90deg);
-}
-.intro h5{
-    text-align: center;
-    font-size: 2rem;
-    animation-name: scroller;
-    animation-duration: 3s;
-    animation-delay: 4s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    position: relative;
-    animation-fill-mode: forwards;
-}
-
-.intro .scroll-line{
-    margin-top: 6px;
-    height: 28px;
-    width: 150px;
-    background-color: white;
-    margin-left: 10px;
-    z-index: 2;
-    animation-name: boxremove;
-    animation-duration: 4s;
-    animation-delay: 4s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    position: relative;
-    animation-fill-mode: forwards;
-}
-@keyframes scroller{
-    0% { left: 0px;}
-    100% { left: 500px;}
-}
-@keyframes boxremove{
-    0% { left: 0px;}
-    100% { left: 300px;}
-}
-
 .add{
     position: fixed;
     bottom: 10vh;
@@ -111,25 +51,15 @@ h5{
     background-clip: padding-box;
   }
    
- @media (max-width: 1000px){
+  @media (max-width: 1000px){
     .intro .scrollContainer{
         display: none;
     }
  }
-  @media (max-width:800px){
-    .intro{
-        height: 70vh;
-    }
-
-    .intro h1{
-        font-size: 3rem;
-    }
+ 
+ @media (max-width:800px){
     h2{
         font-size: 3rem;
     }
 }
-  @media (max-width:700px){
-    .intro h1{
-        font-size: 2.1rem;
-    }
-}
+  

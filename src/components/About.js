@@ -9,16 +9,12 @@ const About = () => {
                 <h3 >About me</h3>
                 <h4 >Marius Aleksander Sletten</h4>
                 <div >
-                <p >UX designer som liker Front-end development litt ekstra godt. Det høres kanskje kjedelig ut for mange, men det er ett eller annet ved det å sitte flere timer i strekk og bare glemme tiden. Frustrerende er det også, men når du løser utfordringene føles det ekstra godt. Kan minne litt om puslespill.
-</p><p>
-I en alder av 25 har jeg allerede jobbet 10 år som leder i kiwi. Dette har lært meg veldig mye. Det har gitt meg den selvtilliten og erfaringen jeg trenger for å være en god leder. På en annen side har det også gitt meg forståelse for hvordan et mindre team kan jobbe godt sammen. Spesielt viktig er det å lytte og kommunisere til hverandre da. Noe jeg ser på som en verdifull ferdighet som UX designer.</p>
-<p>
-På fritiden er jeg veldig stille og rolig av meg. Har blitt veldig glad i styrketrening, mye takket være min eldre bror. Videre syntes jeg det er gøy å spille med venner, spesielt lagspill som krever kommunikasjon. Føler det gir meg mer enn bare tidsfordriv.</p>
+                <p >I'm a UX/UI designer who is extra passionate about Front-end development. It may sound boring to many, but to me there is something special about it. I can sit down for hours forgetting the time just because I want to solve the next problem.</p>
             </div>
             </div>
             <div className='contact animated slideInUp'>
-                <h3 >Contact me</h3>
-                <p>marraleks@hotmail.com</p>
+                <h3>Contact me</h3>
+                <a href="mailto:marraleks@hotmail.com">marraleks@hotmail.com</a>
                 <p>+47 97 17 97 98</p>
                 <h3>Find me on</h3>
                     <a href='https://www.linkedin.com/in/marius-aleksander-sletten-92aa3716a/' target="_blank" rel="noopener noreferrer">linkedin</a>

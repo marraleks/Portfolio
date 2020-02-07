@@ -14,8 +14,6 @@ main.detail{
     outline: none;
 }
 
-
-
 .parallax-overlay{
     background:rgba(0,0,0,.7);
     width:100vw;
@@ -47,7 +45,7 @@ main.detail{
     width: 100vw;
     display: grid;
     grid-auto-flow: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0 15% 0 15%;
     margin-top: 10vh;
     margin-bottom: 10vh;
@@ -67,6 +65,7 @@ h3{
 .projectLink a{
     text-decoration: underline;
     color: #747474;
+    display: inline;
 }
 
 [data-vimeo-initialized="true"] {
@@ -91,8 +90,8 @@ h3{
     place-items: center;
     justify-content: space-between;
     background-color: #2B2A29;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .pager a{
     color: white;
@@ -105,6 +104,7 @@ h3{
     .projectContainer{
         grid-auto-flow: row;
     } 
+    
 
 }
 
@@ -179,7 +179,6 @@ h3{
 }
 
 @media (max-width:750px){
-
     .projectExtra div{
         display: block;
         padding: 0 0% 0% 5%; 
