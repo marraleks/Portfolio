@@ -62,6 +62,10 @@ h3{
     font-family: 'Gilroy';
     color: #747474;
 }
+.projectByline, .projectTech, .projectYear, .projectLink{
+    line-height: 1.4;
+}
+
 .projectLink a{
     text-decoration: underline;
     color: #747474;
