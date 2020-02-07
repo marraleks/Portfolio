@@ -111,58 +111,20 @@ h3{
     
 
 }
+img{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.epiws{
-    background: url('../img/EpiwsMockup.png');
-    height: 70vh;
-    width: 70vw;
-    display: block;
-    margin: 0 auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.pelle{
-    background: url('../img/Pelle.png');
-    height: 70vh;
-    width: 70vw;
-    display: block;
-    margin: 0 auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 5%;
-}
-.fonnts{
-    background: url('../img/fonnts.png');
-    height: 70vh;
-    width: 90vw;
-    display: block;
-    margin: 0 auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 5%;
-}
-.skahr{
-    background: url('../img/Skahrtest.png');
-    height: 140vh;
-    width: 100vw;
-    display: block;
-    margin: 0 auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 5%;
-    margin-top: -10%;
-}
 .projectExtra div{
     display: grid;
     grid-auto-flow: column;
     padding: 0% 15% 0% 15%;
     gap: 5%;
-
 }
+
 .projectExtra p{
     font-family: 'Gilroy';
     color: #747474;
@@ -183,6 +145,12 @@ h3{
 }
 
 @media (max-width:750px){
+    img{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .projectExtra div{
         display: block;
         padding: 0 0% 0% 5%; 
@@ -193,22 +161,6 @@ h3{
     }
     .parallax-overlay h1{
         font-size: 2.5rem;
-    }
-    .epiws{
-        height: 50vh;
-        width: 90vw;
-    }
-    .pelle{
-        height: 23vh;  
-        width: 90vw; 
-    }
-    .fonnts{
-        height: 50vh;
-        width: 90vw;
-    }
-    .skahr{
-        height: 50vh;
-        width: 100vw;
     }
     .projectExtra p{
         font-family: 'Gilroy';
