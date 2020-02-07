@@ -42,7 +42,6 @@
 .AboutContainer .about p{
     font-size: 1.3rem;
 }
-
 @media (max-width:900px){
     .AboutContainer{
         grid-auto-flow: row;
