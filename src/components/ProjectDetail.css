@@ -45,7 +45,7 @@ main.detail{
     width: 100vw;
     display: grid;
     grid-auto-flow: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0 20% 0 20%;
     margin-top: 10vh;
     margin-bottom: 10vh;
@@ -55,7 +55,6 @@ main.detail{
 h3{
     font-size: 1.1rem;
     color: #2B2A29;
-    margin-top: 5vh;
 }
 
 .projectByline, .projectTech, .projectYear, .projectDescription, .projectLink{
