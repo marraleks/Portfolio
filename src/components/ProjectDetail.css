@@ -46,7 +46,7 @@ main.detail{
     display: grid;
     grid-auto-flow: column;
     justify-content: space-evenly;
-    padding: 0 15% 0 15%;
+    padding: 0 22% 0 22%;
     margin-top: 10vh;
     margin-bottom: 10vh;
     gap: 20%;
