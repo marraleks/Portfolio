@@ -45,22 +45,26 @@ main.detail{
     width: 100vw;
     display: grid;
     grid-auto-flow: column;
-    justify-content: space-evenly;
-    padding: 0 22% 0 22%;
+    justify-content: space-between;
+    padding: 0 20% 0 20%;
     margin-top: 10vh;
     margin-bottom: 10vh;
-    gap: 20%;
+    gap: 10%;
 }
 
 h3{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: #2B2A29;
-    margin-top: 0;
+    margin-top: 5vh;
 }
 
 .projectByline, .projectTech, .projectYear, .projectDescription, .projectLink{
     font-family: 'Gilroy';
     color: #747474;
+    font-size: 0.9rem;
+}
+.projectDescription{
+    font-size: 1rem;
 }
 .projectByline, .projectTech, .projectYear, .projectLink{
     line-height: 1.4;
