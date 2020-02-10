@@ -48,8 +48,7 @@ const Edit = (props) => {
     const uploadError = (error) => {
         setStatus(error)
     }
-    const handleProgress = (precentage) => {
-        console.log(precentage)
+    const handleProgress = () => {
     }
     const uploadSuccess = filename => {
         firebase

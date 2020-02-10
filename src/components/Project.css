@@ -66,7 +66,7 @@
 }
 
 
-@media (max-width:800px){
+@media (max-width:700px){
     .project{
         min-height: 40vh;
     }
@@ -80,6 +80,7 @@
         display: none;
     }
 }
+
 
 .spec.project:hover > .afterHover{
     opacity: 0;

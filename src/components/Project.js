@@ -30,12 +30,12 @@ const Project = (props) => {
     return(
        
         <div className={props.comingsoon ? 'spec project':'project'}>
-            <div className="afterHover" onClick={ props.comingsoon ? '' : () => navigate(process.env.PUBLIC_URL + '/projects/' + props.id)}> 
+            <div className="afterHover" onClick={ () => !props.comingsoon && navigate(process.env.PUBLIC_URL + '/projects/' + props.id)}> 
                 <h1>{props.data.title}</h1>
                 <p>&mdash; view &mdash;</p>
             </div>
             <div className='child' style={styles}>
-                    <div className='overlay' onClick={ props.comingsoon ? '' : () => navigate(process.env.PUBLIC_URL + '/projects/' + props.id)}></div>
+                    <div className='overlay' onClick={ () => !props.comingsoon && navigate(process.env.PUBLIC_URL + '/projects/' + props.id)}></div>
             </div>
             {
                 props.signedIn &&
