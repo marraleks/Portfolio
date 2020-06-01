@@ -1,181 +1,184 @@
-main.detail{
-    padding:0;
-    justify-content: start;
-    background:white;
-    position:relative;
+main.detail {
+  padding: 0;
+  justify-content: start;
+  background: white;
+  position: relative;
+  overflow-x: hidden;
 }
 
-.project-video{
-    width:80vw;
-    margin:auto;
+.project-video {
+  width: 80vw;
+  margin: auto;
 }
-.project-video video{
-    width:100%;
-    outline: none;
-}
-
-.parallax-overlay{
-    background:rgba(0,0,0,.7);
-    width:100vw;
-    height:100vh;
-    padding-top:10vh;
-    display:grid;
-    place-items:center;
-    color:#eee;
-    font-size:2rem;
+.project-video video {
+  width: 100%;
+  outline: none;
 }
 
-.parallax-overlay > div{
-    position:sticky;
-    top:50vh;
+.parallax-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10vh;
+  display: grid;
+  place-items: center;
+  color: #eee;
+  font-size: 2rem;
 }
 
-.parallax-overlay h1{
-    font-weight:300;
-    padding:0;
-    margin: 0;
-    text-align: center;
-}
-.parallax-overlay p{
-    font-weight:bold;
-    margin:0 0 2rem 0;
+.parallax-overlay > div {
+  position: sticky;
+  top: 50vh;
 }
 
-.projectContainer{
-    width: 100vw;
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-evenly;
-    padding: 0 20% 0 20%;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    gap: 10%;
+.parallax-overlay h1 {
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.parallax-overlay p {
+  font-weight: bold;
+  margin: 0 0 2rem 0;
 }
 
-h3{
-    font-size: 1.1rem;
-    color: #2B2A29;
+.projectContainer {
+  width: 100vw;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+  padding: 0 20% 0 20%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  gap: 10%;
 }
 
-.projectByline, .projectTech, .projectYear, .projectDescription, .projectLink{
-    font-family: 'Gilroy';
-    color: #747474;
-    font-size: 0.9rem;
-}
-.projectDescription{
-    font-size: 1rem;
-}
-.projectByline, .projectTech, .projectYear, .projectLink{
-    line-height: 1.4;
+h3 {
+  font-size: 1.1rem;
+  color: #2b2a29;
 }
 
-.projectLink a{
-    text-decoration: underline;
-    color: #747474;
-    display: inline;
+.projectByline,
+.projectTech,
+.projectYear,
+.projectDescription,
+.projectLink {
+  font-family: "Gilroy";
+  color: #747474;
+  font-size: 0.9rem;
+}
+.projectDescription {
+  font-size: 1rem;
+}
+.projectByline,
+.projectTech,
+.projectYear,
+.projectLink {
+  line-height: 1.4;
+}
+
+.projectLink a {
+  text-decoration: underline;
+  color: #747474;
+  display: inline;
 }
 
 [data-vimeo-initialized="true"] {
-    box-sizing:border-box;
-    overflow:hidden;
-    width:100%;
-    display:grid;
-    place-items:center;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  display: grid;
+  place-items: center;
 }
 
- .projectExtra{
-    justify-self: start;
-    width: 100vw;
- }
+.projectExtra {
+  justify-self: start;
+  width: 100vw;
+}
 
-.pager{
-    margin-top: 10vh;
-    width: 100vw;
-    height: 10vh;
-    display: grid;
-    grid-auto-flow: column;
-    place-items: center;
-    justify-content: space-between;
-    background-color: #2B2A29;
-    padding-left: 10%;
-    padding-right: 10%;
+.pager {
+  margin-top: 10vh;
+  width: 100vw;
+  height: 10vh;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  justify-content: space-between;
+  background-color: #2b2a29;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-.pager a{
-    color: white;
-    text-decoration: none;
+.pager a {
+  color: white;
+  text-decoration: none;
 }
-.pager a:hover{
-    color: #D1363A;
+.pager a:hover {
+  color: #d1363a;
 }
-@media (max-width:1000px){
-    .projectContainer{
-        grid-auto-flow: row;
-    } 
-    
+@media (max-width: 1000px) {
+  .projectContainer {
+    grid-auto-flow: row;
+  }
+}
+img {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.projectExtra div {
+  display: grid;
+  grid-auto-flow: column;
+  padding: 0% 15% 0% 15%;
+  gap: 5%;
 }
-img{
-    width: 70%;
+
+.projectExtra p {
+  font-family: "Gilroy";
+  color: #747474;
+}
+
+.mobileIntro {
+  background-color: #2b2a29;
+  margin-top: 10vh;
+}
+.overlayIntro {
+  background: rgba(0, 0, 0, 0.7);
+  height: 30vh;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  img {
+    width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+  }
+  .projectExtra div {
+    display: block;
+    padding: 0 0% 0% 5%;
+  }
 
-.projectExtra div{
-    display: grid;
-    grid-auto-flow: column;
-    padding: 0% 15% 0% 15%;
-    gap: 5%;
-}
-
-.projectExtra p{
-    font-family: 'Gilroy';
+  .projectContainer {
+    padding: 0 5% 0 5%;
+  }
+  .parallax-overlay h1 {
+    font-size: 2.5rem;
+  }
+  .projectExtra p {
+    font-family: "Gilroy";
     color: #747474;
-   
+    padding: 5% 5% 0 0%;
+  }
+  .parallax {
+    display: none;
+  }
+  .pager a:hover {
+    color: white;
+  }
 }
-
-.mobileIntro{
-    background-color: #2B2A29;
-    margin-top: 10vh; 
-}
-.overlayIntro{
-    background:rgba(0,0,0,.7);
-    height: 30vh;
-    width: 100vw;
-    display: grid;
-    place-content: center;
-    text-align: center;
-}
-
-@media (max-width:750px){
-    img{
-        width: 90%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .projectExtra div{
-        display: block;
-        padding: 0 0% 0% 5%; 
-    }
-
-    .projectContainer{
-        padding: 0 5% 0 5%; 
-    }
-    .parallax-overlay h1{
-        font-size: 2.5rem;
-    }
-    .projectExtra p{
-        font-family: 'Gilroy';
-        color: #747474;
-        padding: 5% 5% 0 0%;
-    }
-    .parallax{
-        display:none;
-    }
-    .pager a:hover{
-        color: white;
-    }
-   
-}
-
