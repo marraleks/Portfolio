@@ -1,65 +1,62 @@
-.add{
-    position: fixed;
-    bottom: 10vh;
-    right: 10vh;
-    display: grid;
-    place-items: center;
-    z-index: 1;
-    transform: scale(2.5);
+.add {
+  position: fixed;
+  bottom: 10vh;
+  right: 10vh;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+  transform: scale(2.5);
 }
-.add .edit-icons{
-    color: #D1363A;
+.add .edit-icons {
+  color: #d1363a;
 }
-
 
 .project img {
-    width: 100%;
+  width: 100%;
 }
 
-h1:nth-child(odd){
-    color: white;
+h1:nth-child(odd) {
+  color: white;
 }
-h1:nth-child(even){
-    color: #D1363A;
+h1:nth-child(even) {
+  color: #d1363a;
 }
-.white{
-    color: white;
+.white {
+  color: white;
 }
-.red{
-    color: #D1363A;
-}
-
-
-h2{
-    color: #2B2A29;
-    font-size: 4rem;
-    margin-left: 2rem;
-    justify-self: start;
+.red {
+  color: #d1363a;
 }
 
-h5{
-    color: white;
+h2 {
+  color: #2b2a29;
+  font-size: 4rem;
+  margin-left: 2rem;
+  justify-self: start;
+}
+
+h5 {
+  color: white;
 }
 
 .my-masonry-grid {
-    display: -webkit-box; /* Not needed if autoprefixing */
-    display: -ms-flexbox; /* Not needed if autoprefixing */
-    display: flex;
-    width: 100%;
-  }
-  .my-masonry-grid_column {
-    background-clip: padding-box;
-  }
-   
-  @media (max-width: 1000px){
-    .intro .scrollContainer{
-        display: none;
-    }
- }
- 
- @media (max-width:800px){
-    h2{
-        font-size: 3rem;
-    }
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  width: 100%;
 }
-  
+.my-masonry-grid_column {
+  background-clip: padding-box;
+}
+
+@media (max-width: 1000px) {
+  .intro .scrollContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 3rem;
+  }
+}

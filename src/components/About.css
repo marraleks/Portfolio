@@ -1,54 +1,54 @@
+.AboutContainer {
+  display: grid;
+  grid-auto-flow: column;
+  padding: 0 10% 0 10%;
+  width: 100vw;
+  height: 100%;
+  align-items: center;
+  background-color: #2b2a29;
+}
+.about {
+  padding-right: 15vw;
+}
 
-.AboutContainer{
-    display: grid;
-    grid-auto-flow: column;
-    padding: 0 10% 0 10%;
-    width: 100vw;
-    height: 100%;
-    align-items: center;
-    background-color: #2B2A29;
+.AboutContainer div h3 {
+  color: #d1363a;
+  padding-top: 1rem;
+  margin-bottom: 0;
+  font-size: 1rem;
 }
-.about{
-    padding-right: 15vw;
+.AboutContainer div h4 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
-
-.AboutContainer div h3{
-    color: #D1363A;
-    padding-top: 1rem;
-    margin-bottom: 0;
-    font-size: 1rem;
+.AboutContainer div h4,
+p,
+a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
 }
-.AboutContainer div h4{
-   font-size: 1.2rem;
-   margin-top: 1rem;
+.AboutContainer a {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
-.AboutContainer div h4, p, a{
-    color: #FFFFFF;
-    text-decoration: none;
-    display: block;
+.AboutContainer div p {
+  font-family: "Gilroy";
 }
-.AboutContainer a{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-decoration: underline;
-    text-decoration-color: white;
+.AboutContainer .contact p {
+  font-family: "Integral";
 }
-.AboutContainer div p{
-    font-family: 'Gilroy';
+.AboutContainer .about p {
+  font-size: 1.3rem;
 }
-.AboutContainer .contact p{
-    font-family: 'Integral';
-}
-.AboutContainer .about p{
-    font-size: 1.3rem;
-}
-@media (max-width:900px){
-    .AboutContainer{
-        grid-auto-flow: row;
-        padding: 10% 5% 10% 5%;
-    } 
-    .about{
-        padding-right: 0;
-    }
-
+@media (max-width: 900px) {
+  .AboutContainer {
+    grid-auto-flow: row;
+    padding: 10% 5% 10% 5%;
+  }
+  .about {
+    padding-right: 0;
+  }
 }

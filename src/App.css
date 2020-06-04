@@ -1,97 +1,99 @@
 @font-face {
-  font-family: 'Integral';
-  src: url('./fonts/IntegralCF-Bold.otf');
+  font-family: "Integral";
+  src: url("./fonts/IntegralCF-Bold.otf");
 }
-@font-face{
-  font-family: 'Gilroy';
-  src: url('./fonts/Gilroy-Light.otf');
+@font-face {
+  font-family: "Gilroy";
+  src: url("./fonts/Gilroy-Light.otf");
 }
-@font-face{
-  font-family: 'GilroyB';
-  src: url('./fonts/Gilroy-ExtraBold.otf');
+@font-face {
+  font-family: "GilroyB";
+  src: url("./fonts/Gilroy-ExtraBold.otf");
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
-body, html{
+body,
+html {
   margin: 0;
   padding: 0;
-  font-family: 'Integral', sans-serif;
+  font-family: "Integral", sans-serif;
 }
-a{
+a {
   color: black;
 }
-a:hover{
-  text-decoration: line-through;  
+a:hover {
+  text-decoration: line-through;
 }
 
-
-main{
+main {
   min-height: 100vh;
   padding-top: 10vh;
   display: grid;
   place-items: center;
+  overflow-x: hidden;
 }
 
-.edit-icons{
+.edit-icons {
   cursor: pointer;
   transform: scale(1.5);
   color: white;
 }
 
-button, .button{
+button,
+.button {
   font-size: 1rem;
   background-color: black;
   color: white;
   min-width: 6rem;
-  padding: .6rem;
+  padding: 0.6rem;
   display: block;
   cursor: pointer;
   border-radius: 12px;
 }
-.button{
+.button {
   background: white;
   border: 1px solid #111;
   color: #111;
-  padding: .4rem;
+  padding: 0.4rem;
   max-width: 6rem;
   text-align: center;
   margin-top: 1rem;
 }
 
-.mobileIntro{
-  display:none;
+.mobileIntro {
+  display: none;
 }
-@media only screen and (max-width : 768px) {
-	.animated {
-		/*CSS transitions*/
-		-o-transition-property: none !important;
-		-moz-transition-property: none !important;
-		-ms-transition-property: none !important;
-		-webkit-transition-property: none !important;
-		transition-property: none !important;
-		/*CSS transforms*/
-		-o-transform: none !important;
-		-moz-transform: none !important;
-		-ms-transform: none !important;
-		-webkit-transform: none !important;
-		transform: none !important;
-		/*CSS animations*/
-		-webkit-animation: none !important;
-		-moz-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-	}
+@media only screen and (max-width: 768px) {
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
 }
 
-@media (max-width:750px){
-  .mobileIntro{
-    display:block;
+@media (max-width: 750px) {
+  .mobileIntro {
+    display: block;
   }
-  a:hover{
+  a:hover {
     color: white;
-}
+  }
 }
