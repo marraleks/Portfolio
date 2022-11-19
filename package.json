@@ -19,7 +19,7 @@
     "react-masonry-css": "^1.0.14",
     "react-reveal": "^1.2.2",
     "react-router-scroll-top": "^0.2.1",
-    "react-scripts": "3.3.0",
+    "react-scripts": "5.0.1",
     "react-spinners": "^0.8.0",
     "react-vimeo": "^2.0.0"
   },
